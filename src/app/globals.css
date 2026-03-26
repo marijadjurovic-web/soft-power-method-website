@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: #F4EFE8;
+    color: #1B2230;
+  }
+
+  ::selection {
+    background-color: #C2A65A;
+    color: #1B2230;
+  }
+}
+
+@layer components {
+  .ornament-line {
+    @apply flex items-center gap-4;
+  }
+
+  .ornament-line::before,
+  .ornament-line::after {
+    content: '';
+    @apply flex-1 h-px bg-gold/30;
+  }
+
+  .section-label {
+    @apply font-body text-xs uppercase tracking-[0.3em] text-gold/70 block mb-6;
+  }
+
+  .section-heading {
+    @apply font-heading font-light leading-tight;
+  }
+
+  .gold-divider {
+    @apply h-px bg-gold/40 my-8;
+  }
+
+  .btn-primary {
+    @apply inline-block font-body text-xs uppercase tracking-[0.2em] px-8 py-4 bg-gold text-navy hover:bg-gold/90 transition-colors duration-200 text-center;
+  }
+
+  .btn-secondary {
+    @apply inline-block font-body text-xs uppercase tracking-[0.2em] px-8 py-4 border border-navy text-navy hover:border-gold hover:text-gold transition-all duration-200 text-center;
+  }
+
+  .btn-ghost {
+    @apply inline-block font-body text-xs uppercase tracking-[0.2em] px-8 py-4 border border-ivory/30 text-ivory hover:border-gold hover:text-gold transition-all duration-200 text-center;
+  }
+
+  .btn-text {
+    @apply inline-block font-body text-xs uppercase tracking-[0.2em] text-navy border-b border-gold pb-0.5 hover:text-gold transition-colors duration-200;
+  }
+
+  .card-bordered {
+    @apply border border-navy/10 p-10 hover:border-gold/40 transition-colors duration-300;
+  }
+}

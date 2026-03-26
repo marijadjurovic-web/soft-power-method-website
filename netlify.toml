@@ -1,0 +1,18 @@
+[build]
+  command = "npm run build"
+  publish = "out"
+
+[build.environment]
+  NODE_VERSION = "20"
+
+[[redirects]]
+  from = "/assessment"
+  to = "https://tally.so/r/REPLACE_WITH_YOUR_TALLY_ID"
+  status = 302
+  force = true
+
+[[redirects]]
+  from = "/assessment/"
+  to = "https://tally.so/r/REPLACE_WITH_YOUR_TALLY_ID"
+  status = 302
+  force = true

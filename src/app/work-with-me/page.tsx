@@ -1,0 +1,372 @@
+import type { Metadata } from "next";
+import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "Work With Me",
+  description:
+    "Two ways to work with Marija Djurović: the Clarity Session (90 min, 500€) and 1:1 Mentorship (8 weeks, 1.800€). Both are structured. Neither is open-ended.",
+};
+
+export default function WorkWithMePage() {
+  return (
+    <>
+      {/* ── PAGE HEADER ─────────────────────────────────────────── */}
+      <section className="min-h-[55vh] bg-navy flex items-end relative overflow-hidden">
+        <div
+          className="absolute inset-0 pointer-events-none"
+          style={{
+            background:
+              "radial-gradient(ellipse 70% 50% at 20% 100%, rgba(194,166,90,0.07) 0%, transparent 65%)",
+          }}
+        />
+        <div className="max-w-7xl mx-auto px-6 lg:px-10 pt-36 pb-20 w-full relative">
+          <div className="flex items-center gap-4 mb-8">
+            <span className="text-gold/50 text-xs">✦</span>
+            <span className="h-px w-10 bg-gold/30" />
+            <span className="font-body text-[0.65rem] uppercase tracking-[0.3em] text-gold/40">
+              Work With Me
+            </span>
+          </div>
+          <h1 className="font-heading text-5xl sm:text-6xl lg:text-7xl text-ivory font-light leading-[1.05] max-w-2xl">
+            Two ways.
+            <br />
+            <span className="text-gold">Both structured.</span>
+          </h1>
+          <div className="h-px w-20 bg-gold/30 mt-10" />
+        </div>
+      </section>
+
+      {/* ── INTRO ──────────────────────────────────────────────── */}
+      <section className="py-24 bg-ivory border-b border-navy/8">
+        <div className="max-w-7xl mx-auto px-6 lg:px-10">
+          <div className="max-w-2xl">
+            <p className="font-body text-base text-navy/60 leading-relaxed mb-5">
+              There are two ways to work with me. Both are structured. Neither
+              is open-ended. I do not run ongoing, indefinite programs. I run
+              precise processes with a clear beginning, a clear objective, and a
+              clear end.
+            </p>
+            <p className="font-body text-base text-navy/60 leading-relaxed">
+              If you are unsure which is right for you, start with the Clarity
+              Session. It will tell you exactly where you are — and what the
+              right next step is, whether that is mentorship or something else
+              entirely.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* ── CLARITY SESSION ────────────────────────────────────── */}
+      <section id="clarity-session" className="py-28 bg-ivory">
+        <div className="max-w-7xl mx-auto px-6 lg:px-10">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-16">
+            {/* Label */}
+            <div className="lg:col-span-1 lg:pt-2">
+              <span className="font-body text-[0.65rem] uppercase tracking-[0.2em] text-gold/50 [writing-mode:vertical-lr] rotate-180 hidden lg:block">
+                01
+              </span>
+              <span className="font-body text-[0.65rem] uppercase tracking-[0.2em] text-gold/50 lg:hidden">
+                01
+              </span>
+            </div>
+
+            {/* Content */}
+            <div className="lg:col-span-7 space-y-10">
+              <div>
+                <div className="flex items-baseline gap-6 mb-3">
+                  <h2 className="font-heading text-4xl sm:text-5xl text-navy font-medium">
+                    Clarity Session
+                  </h2>
+                </div>
+                <span className="font-body text-[0.65rem] uppercase tracking-[0.2em] text-navy/35">
+                  90 minutes · One session
+                </span>
+              </div>
+
+              <div className="h-px bg-navy/8" />
+
+              <div className="space-y-5 font-body text-base text-navy/60 leading-relaxed">
+                <p>
+                  A single, structured 90-minute session designed for one
+                  purpose: clarity.
+                </p>
+                <p>
+                  We identify where you are in your leadership development, what
+                  pattern is most active, and what the precise next step is. You
+                  leave with a clear picture and a clear direction.
+                </p>
+                <p className="font-medium text-navy/80">
+                  This is not a discovery call. It is a working session.
+                </p>
+              </div>
+
+              <div>
+                <p className="font-body text-[0.65rem] uppercase tracking-[0.2em] text-navy/40 mb-6">
+                  What happens
+                </p>
+                <ul className="space-y-4">
+                  {[
+                    {
+                      step: "Before",
+                      description:
+                        "Short written intake form — 10 minutes, designed to orient the session precisely.",
+                    },
+                    {
+                      step: "Session",
+                      description:
+                        "90-minute structured diagnostic conversation. We work through your current position across the four areas of the method.",
+                    },
+                    {
+                      step: "After",
+                      description:
+                        "Written summary of findings and one clear next step. No vague action lists — one precise direction.",
+                    },
+                  ].map((item) => (
+                    <li key={item.step} className="flex gap-6">
+                      <span className="font-body text-[0.65rem] uppercase tracking-[0.15em] text-gold/60 w-14 flex-shrink-0 pt-0.5">
+                        {item.step}
+                      </span>
+                      <span className="font-body text-sm text-navy/55 leading-relaxed">
+                        {item.description}
+                      </span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+
+              <div>
+                <p className="font-body text-[0.65rem] uppercase tracking-[0.2em] text-navy/40 mb-6">
+                  This is for you if
+                </p>
+                <ul className="space-y-3">
+                  {[
+                    "You need clarity before committing to a longer process",
+                    "You want a precise outside perspective on a specific leadership challenge",
+                    "Something has shifted and you need to understand what",
+                    "You are at a decision point and need structural clarity, not encouragement",
+                  ].map((item) => (
+                    <li key={item} className="flex items-start gap-3">
+                      <span className="text-gold/50 mt-1 text-xs flex-shrink-0">
+                        —
+                      </span>
+                      <span className="font-body text-sm text-navy/55 leading-relaxed">
+                        {item}
+                      </span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+
+            {/* Price card */}
+            <div className="lg:col-span-4">
+              <div className="border border-navy/10 p-10 sticky top-28">
+                <p className="font-heading text-5xl text-gold mb-2">500€</p>
+                <p className="font-body text-[0.65rem] uppercase tracking-[0.2em] text-navy/35 mb-8">
+                  One session · 90 minutes
+                </p>
+                <div className="h-px bg-navy/8 mb-8" />
+                <ul className="space-y-3 mb-10">
+                  {[
+                    "Video session (Zoom)",
+                    "Pre-session intake",
+                    "Written summary & next step",
+                    "Booking upon inquiry",
+                  ].map((item) => (
+                    <li key={item} className="flex items-start gap-3">
+                      <span className="text-gold/60 mt-0.5 text-xs">✦</span>
+                      <span className="font-body text-sm text-navy/55">
+                        {item}
+                      </span>
+                    </li>
+                  ))}
+                </ul>
+                <Link href="/contact" className="btn-primary w-full block text-center">
+                  Book a Session
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ── DIVIDER ────────────────────────────────────────────── */}
+      <div className="max-w-7xl mx-auto px-6 lg:px-10">
+        <div className="border-t border-navy/10 ornament-line py-4">
+          <span className="text-gold/30 text-xs px-4">✦</span>
+        </div>
+      </div>
+
+      {/* ── 1:1 MENTORSHIP ─────────────────────────────────────── */}
+      <section id="mentorship" className="py-28 bg-ivory">
+        <div className="max-w-7xl mx-auto px-6 lg:px-10">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-16">
+            {/* Label */}
+            <div className="lg:col-span-1 lg:pt-2">
+              <span className="font-body text-[0.65rem] uppercase tracking-[0.2em] text-gold/50 [writing-mode:vertical-lr] rotate-180 hidden lg:block">
+                02
+              </span>
+              <span className="font-body text-[0.65rem] uppercase tracking-[0.2em] text-gold/50 lg:hidden">
+                02
+              </span>
+            </div>
+
+            {/* Content */}
+            <div className="lg:col-span-7 space-y-10">
+              <div>
+                <div className="flex items-baseline gap-6 mb-3">
+                  <h2 className="font-heading text-4xl sm:text-5xl text-navy font-medium">
+                    1:1 Mentorship
+                  </h2>
+                </div>
+                <span className="font-body text-[0.65rem] uppercase tracking-[0.2em] text-navy/35">
+                  8 weeks · Weekly sessions
+                </span>
+              </div>
+
+              <div className="h-px bg-navy/8" />
+
+              <div className="space-y-5 font-body text-base text-navy/60 leading-relaxed">
+                <p>
+                  Eight weeks of structured recalibration. We work through the
+                  four areas of the Soft Power Method — Identity, Integrity,
+                  Stability, Standards — with precision and depth.
+                </p>
+                <p>
+                  This is not open-ended conversation. Each session has a clear
+                  objective. Each week builds on the last. The arc is
+                  deliberate.
+                </p>
+                <p className="font-medium text-navy/80">
+                  This is not coaching in the conventional sense. It is
+                  methodical recalibration.
+                </p>
+              </div>
+
+              <div>
+                <p className="font-body text-[0.65rem] uppercase tracking-[0.2em] text-navy/40 mb-6">
+                  The arc
+                </p>
+                <div className="space-y-4">
+                  {[
+                    {
+                      weeks: "Week 1–2",
+                      focus: "Identity",
+                      description:
+                        "Assessment review and deep work on identity — who you are outside of achievement and performance.",
+                    },
+                    {
+                      weeks: "Week 3–4",
+                      focus: "Integrity",
+                      description:
+                        "Identifying and closing the gaps between what you think, say, and do.",
+                    },
+                    {
+                      weeks: "Week 5–6",
+                      focus: "Stability",
+                      description:
+                        "Building emotional regulation as a deliberate practice and leadership tool.",
+                    },
+                    {
+                      weeks: "Week 7–8",
+                      focus: "Standards & Integration",
+                      description:
+                        "Redefining your standards and integrating the work across all four areas.",
+                    },
+                  ].map((item) => (
+                    <div
+                      key={item.weeks}
+                      className="grid grid-cols-12 gap-4 py-4 border-b border-navy/6 last:border-0"
+                    >
+                      <span className="col-span-3 font-body text-[0.65rem] uppercase tracking-[0.15em] text-navy/30">
+                        {item.weeks}
+                      </span>
+                      <div className="col-span-9">
+                        <span className="font-heading text-base text-gold font-medium block mb-1">
+                          {item.focus}
+                        </span>
+                        <span className="font-body text-sm text-navy/50 leading-relaxed">
+                          {item.description}
+                        </span>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              <div>
+                <p className="font-body text-[0.65rem] uppercase tracking-[0.2em] text-navy/40 mb-6">
+                  This is for you if
+                </p>
+                <ul className="space-y-3">
+                  {[
+                    "You know something fundamental needs to shift — not just a surface behavior",
+                    "You are willing to do precise, deliberate work over eight weeks",
+                    "You want a structured process, not open-ended support",
+                    "You are ready for the full recalibration process",
+                  ].map((item) => (
+                    <li key={item} className="flex items-start gap-3">
+                      <span className="text-gold/50 mt-1 text-xs flex-shrink-0">
+                        —
+                      </span>
+                      <span className="font-body text-sm text-navy/55 leading-relaxed">
+                        {item}
+                      </span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+
+            {/* Price card */}
+            <div className="lg:col-span-4">
+              <div className="border border-navy/10 p-10 sticky top-28">
+                <p className="font-heading text-5xl text-gold mb-2">1.800€</p>
+                <p className="font-body text-[0.65rem] uppercase tracking-[0.2em] text-navy/35 mb-8">
+                  8 weeks · Weekly sessions
+                </p>
+                <div className="h-px bg-navy/8 mb-8" />
+                <ul className="space-y-3 mb-10">
+                  {[
+                    "8 × 60-minute video sessions",
+                    "Pre-program assessment review",
+                    "Session notes & materials",
+                    "Application required",
+                    "Limited availability",
+                  ].map((item) => (
+                    <li key={item} className="flex items-start gap-3">
+                      <span className="text-gold/60 mt-0.5 text-xs">✦</span>
+                      <span className="font-body text-sm text-navy/55">
+                        {item}
+                      </span>
+                    </li>
+                  ))}
+                </ul>
+                <Link href="/contact" className="btn-primary w-full block text-center">
+                  Apply Now
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ── CLOSING NOTE ───────────────────────────────────────── */}
+      <section className="py-24 bg-navy">
+        <div className="max-w-7xl mx-auto px-6 lg:px-10">
+          <div className="max-w-2xl">
+            <p className="font-heading text-2xl sm:text-3xl italic text-ivory/60 leading-relaxed mb-8">
+              "If you are unsure where to start —
+              <span className="text-gold"> start with the Assessment.</span>
+              <br />
+              It will show you exactly where you are."
+            </p>
+            <Link href="/assessment" className="btn-primary">
+              Take the Free Assessment
+            </Link>
+          </div>
+        </div>
+      </section>
+    </>
+  );
+}
