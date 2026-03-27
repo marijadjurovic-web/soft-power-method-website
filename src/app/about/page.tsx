@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "About",
+  title: "About Marija Djurović | Founder",
   description:
-    "I am Marija Djurović, founder of The Soft Power Method. A pattern recognizer, not a motivator. What I build with the women I work with is permanent.",
+    "Marija Djurović is the founder of The Soft Power Method — an identity-based leadership methodology for women in leadership. Not a coach. Not a motivator. A pattern recognizer.",
 };
 
 export default function AboutPage() {

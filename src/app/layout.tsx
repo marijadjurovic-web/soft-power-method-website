@@ -21,20 +21,82 @@ const dmSans = DM_Sans({
 
 export const metadata: Metadata = {
   title: {
-    default: "The Soft Power Method | Marija Djurović",
+    default: "The Soft Power Method | Leadership Methodology for Women",
     template: "%s | The Soft Power Method",
   },
   description:
-    "A leadership methodology for women who are ready to stand fully in who they are. Built on Identity, Integrity, Stability, and Standards.",
+    "The Soft Power Method is an identity-based leadership methodology for women in leadership. Discover where you stand with the free Soft Power Assessment and work with Marija Djurović.",
+  keywords: [
+    "women's leadership",
+    "leadership coaching for women",
+    "identity-based leadership",
+    "regulated leader",
+    "survival achiever",
+    "soft power",
+    "women in leadership",
+    "leadership methodology",
+    "executive coaching women",
+    "Marija Djurovic",
+    "Soft Power Assessment",
+  ],
+  authors: [{ name: "Marija Djurović" }],
+  creator: "Marija Djurović",
   openGraph: {
     type: "website",
     locale: "en_US",
     url: "https://thesoftpowermethod.com",
     siteName: "The Soft Power Method",
-    title: "The Soft Power Method | Marija Djurović",
+    title: "The Soft Power Method | Leadership Methodology for Women",
     description:
-      "A leadership methodology for women who are ready to stand fully in who they are.",
+      "An identity-based leadership methodology for women who are ready to lead from who they actually are. Take the free Soft Power Assessment.",
   },
+  twitter: {
+    card: "summary_large_image",
+    title: "The Soft Power Method | Leadership Methodology for Women",
+    description:
+      "An identity-based leadership methodology for women who are ready to lead from who they actually are.",
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
+};
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      name: "The Soft Power Method",
+      url: "https://thesoftpowermethod.com",
+      description:
+        "An identity-based leadership methodology for women in leadership.",
+    },
+    {
+      "@type": "Person",
+      name: "Marija Djurović",
+      jobTitle: "Founder",
+      description:
+        "Founder of The Soft Power Method, a leadership methodology for women.",
+      worksFor: {
+        "@type": "Organization",
+        name: "The Soft Power Method",
+        url: "https://thesoftpowermethod.com",
+      },
+      url: "https://thesoftpowermethod.com/about",
+    },
+    {
+      "@type": "Service",
+      name: "The Soft Power Method",
+      provider: {
+        "@type": "Person",
+        name: "Marija Djurović",
+      },
+      description:
+        "Identity-based leadership methodology and executive coaching for women in leadership.",
+      url: "https://thesoftpowermethod.com",
+    },
+  ],
 };
 
 export default function RootLayout({
@@ -44,6 +106,16 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`${cormorant.variable} ${dmSans.variable}`}>
+      <head>
+        <link
+          href="https://assets.calendly.com/assets/external/widget.css"
+          rel="stylesheet"
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+      </head>
       <body className="bg-ivory font-body antialiased">
         <Navigation />
         <main>{children}</main>

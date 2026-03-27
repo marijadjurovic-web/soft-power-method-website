@@ -4,7 +4,7 @@ import { useEffect } from "react";
 import Link from "next/link";
 
 // ── REPLACE THIS with your actual Tally form URL ──────────────────
-const TALLY_URL = "https://tally.so/r/REPLACE_WITH_YOUR_TALLY_ID";
+const TALLY_URL = "https://tally.so/r/ZjNr5z";
 // ─────────────────────────────────────────────────────────────────
 
 export default function AssessmentPage() {

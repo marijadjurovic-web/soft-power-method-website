@@ -1,10 +1,12 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import CalendlyEmbed from "@/components/CalendlyEmbed";
+import MentorshipForm from "@/components/MentorshipForm";
 
 export const metadata: Metadata = {
-  title: "Work With Me",
+  title: "Work With Me | Clarity Session & Soft Power Mentorship",
   description:
-    "Two ways to work with Marija Djurović: the Clarity Session (90 min, 500€) and 1:1 Mentorship (8 weeks, 1.800€). Both are structured. Neither is open-ended.",
+    "Two ways to work with Marija Djurović: the 90-minute Clarity Session (500€) and the Soft Power Mentorship (1.200€). Structured leadership coaching for women — no open-ended programs, no fluff.",
 };
 
 export default function WorkWithMePage() {
@@ -48,9 +50,8 @@ export default function WorkWithMePage() {
             </p>
             <p className="font-body text-base text-navy/60 leading-relaxed">
               If you are unsure which is right for you, start with the Clarity
-              Session. It will tell you exactly where you are — and what the
-              right next step is, whether that is mentorship or something else
-              entirely.
+              Session. It will show you exactly where you are — and what the
+              right next step is.
             </p>
           </div>
         </div>
@@ -62,10 +63,10 @@ export default function WorkWithMePage() {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-16">
             {/* Label */}
             <div className="lg:col-span-1 lg:pt-2">
-              <span className="font-body text-[0.65rem] uppercase tracking-[0.2em] text-gold/50 [writing-mode:vertical-lr] rotate-180 hidden lg:block">
+              <span className="font-body text-[0.65rem] uppercase tracking-[0.2em] text-blush/60 [writing-mode:vertical-lr] rotate-180 hidden lg:block">
                 01
               </span>
-              <span className="font-body text-[0.65rem] uppercase tracking-[0.2em] text-gold/50 lg:hidden">
+              <span className="font-body text-[0.65rem] uppercase tracking-[0.2em] text-blush/60 lg:hidden">
                 01
               </span>
             </div>
@@ -73,11 +74,9 @@ export default function WorkWithMePage() {
             {/* Content */}
             <div className="lg:col-span-7 space-y-10">
               <div>
-                <div className="flex items-baseline gap-6 mb-3">
-                  <h2 className="font-heading text-4xl sm:text-5xl text-navy font-medium">
-                    Clarity Session
-                  </h2>
-                </div>
+                <h2 className="font-heading text-4xl sm:text-5xl text-navy font-medium mb-3">
+                  Clarity Session
+                </h2>
                 <span className="font-body text-[0.65rem] uppercase tracking-[0.2em] text-navy/35">
                   90 minutes · One session
                 </span>
@@ -119,11 +118,11 @@ export default function WorkWithMePage() {
                     {
                       step: "After",
                       description:
-                        "Written summary of findings and one clear next step. No vague action lists — one precise direction.",
+                        "Written summary of findings and one clear next step. Not a vague action list — one precise direction.",
                     },
                   ].map((item) => (
                     <li key={item.step} className="flex gap-6">
-                      <span className="font-body text-[0.65rem] uppercase tracking-[0.15em] text-gold/60 w-14 flex-shrink-0 pt-0.5">
+                      <span className="font-body text-[0.65rem] uppercase tracking-[0.15em] text-rosewood/60 w-14 flex-shrink-0 pt-0.5">
                         {item.step}
                       </span>
                       <span className="font-body text-sm text-navy/55 leading-relaxed">
@@ -146,7 +145,7 @@ export default function WorkWithMePage() {
                     "You are at a decision point and need structural clarity, not encouragement",
                   ].map((item) => (
                     <li key={item} className="flex items-start gap-3">
-                      <span className="text-gold/50 mt-1 text-xs flex-shrink-0">
+                      <span className="text-blush/60 mt-1 text-xs flex-shrink-0">
                         —
                       </span>
                       <span className="font-body text-sm text-navy/55 leading-relaxed">
@@ -155,6 +154,22 @@ export default function WorkWithMePage() {
                     </li>
                   ))}
                 </ul>
+              </div>
+
+              {/* Calendly embed */}
+              <div className="pt-6">
+                <div className="h-px bg-blush/30 mb-10" />
+                <p className="font-body text-[0.65rem] uppercase tracking-[0.2em] text-rosewood/60 mb-3">
+                  Book Your Session
+                </p>
+                <p className="font-body text-sm text-navy/50 leading-relaxed mb-8">
+                  Select a time below. Complete payment via PayPal after booking
+                  to confirm your spot.
+                </p>
+                <CalendlyEmbed
+                  url="https://calendly.com/mariyadjurovicmd/softpower-clarity"
+                  height={680}
+                />
               </div>
             </div>
 
@@ -171,19 +186,28 @@ export default function WorkWithMePage() {
                     "Video session (Zoom)",
                     "Pre-session intake",
                     "Written summary & next step",
-                    "Booking upon inquiry",
+                    "Payment secures your booking",
                   ].map((item) => (
                     <li key={item} className="flex items-start gap-3">
-                      <span className="text-gold/60 mt-0.5 text-xs">✦</span>
+                      <span className="text-blush/60 mt-0.5 text-xs">✦</span>
                       <span className="font-body text-sm text-navy/55">
                         {item}
                       </span>
                     </li>
                   ))}
                 </ul>
-                <Link href="/contact" className="btn-primary w-full block text-center">
-                  Book a Session
-                </Link>
+                {/* PayPal payment button */}
+                <a
+                  href="https://paypal.me/thesoftpowermethod/500"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn-primary w-full block text-center"
+                >
+                  Pay 500€ via PayPal
+                </a>
+                <p className="font-body text-xs text-navy/30 text-center mt-4 leading-relaxed">
+                  Book your time above, then complete payment to confirm.
+                </p>
               </div>
             </div>
           </div>
@@ -192,21 +216,23 @@ export default function WorkWithMePage() {
 
       {/* ── DIVIDER ────────────────────────────────────────────── */}
       <div className="max-w-7xl mx-auto px-6 lg:px-10">
-        <div className="border-t border-navy/10 ornament-line py-4">
-          <span className="text-gold/30 text-xs px-4">✦</span>
+        <div className="flex items-center gap-6 py-2">
+          <span className="flex-1 h-px bg-blush/25" />
+          <span className="text-blush/30 text-xs">✦</span>
+          <span className="flex-1 h-px bg-blush/25" />
         </div>
       </div>
 
-      {/* ── 1:1 MENTORSHIP ─────────────────────────────────────── */}
+      {/* ── SOFT POWER MENTORSHIP ──────────────────────────────── */}
       <section id="mentorship" className="py-28 bg-ivory">
         <div className="max-w-7xl mx-auto px-6 lg:px-10">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-16">
             {/* Label */}
             <div className="lg:col-span-1 lg:pt-2">
-              <span className="font-body text-[0.65rem] uppercase tracking-[0.2em] text-gold/50 [writing-mode:vertical-lr] rotate-180 hidden lg:block">
+              <span className="font-body text-[0.65rem] uppercase tracking-[0.2em] text-blush/60 [writing-mode:vertical-lr] rotate-180 hidden lg:block">
                 02
               </span>
-              <span className="font-body text-[0.65rem] uppercase tracking-[0.2em] text-gold/50 lg:hidden">
+              <span className="font-body text-[0.65rem] uppercase tracking-[0.2em] text-blush/60 lg:hidden">
                 02
               </span>
             </div>
@@ -214,11 +240,9 @@ export default function WorkWithMePage() {
             {/* Content */}
             <div className="lg:col-span-7 space-y-10">
               <div>
-                <div className="flex items-baseline gap-6 mb-3">
-                  <h2 className="font-heading text-4xl sm:text-5xl text-navy font-medium">
-                    1:1 Mentorship
-                  </h2>
-                </div>
+                <h2 className="font-heading text-4xl sm:text-5xl text-navy font-medium mb-3">
+                  Soft Power Mentorship
+                </h2>
                 <span className="font-body text-[0.65rem] uppercase tracking-[0.2em] text-navy/35">
                   8 weeks · Weekly sessions
                 </span>
@@ -239,7 +263,7 @@ export default function WorkWithMePage() {
                 </p>
                 <p className="font-medium text-navy/80">
                   This is not coaching in the conventional sense. It is
-                  methodical recalibration.
+                  methodical recalibration for women in leadership.
                 </p>
               </div>
 
@@ -306,7 +330,7 @@ export default function WorkWithMePage() {
                     "You are ready for the full recalibration process",
                   ].map((item) => (
                     <li key={item} className="flex items-start gap-3">
-                      <span className="text-gold/50 mt-1 text-xs flex-shrink-0">
+                      <span className="text-blush/60 mt-1 text-xs flex-shrink-0">
                         —
                       </span>
                       <span className="font-body text-sm text-navy/55 leading-relaxed">
@@ -321,7 +345,7 @@ export default function WorkWithMePage() {
             {/* Price card */}
             <div className="lg:col-span-4">
               <div className="border border-navy/10 p-10 sticky top-28">
-                <p className="font-heading text-5xl text-gold mb-2">1.800€</p>
+                <p className="font-heading text-5xl text-gold mb-2">1.200€</p>
                 <p className="font-body text-[0.65rem] uppercase tracking-[0.2em] text-navy/35 mb-8">
                   8 weeks · Weekly sessions
                 </p>
@@ -335,16 +359,48 @@ export default function WorkWithMePage() {
                     "Limited availability",
                   ].map((item) => (
                     <li key={item} className="flex items-start gap-3">
-                      <span className="text-gold/60 mt-0.5 text-xs">✦</span>
+                      <span className="text-blush/60 mt-0.5 text-xs">✦</span>
                       <span className="font-body text-sm text-navy/55">
                         {item}
                       </span>
                     </li>
                   ))}
                 </ul>
-                <Link href="/contact" className="btn-primary w-full block text-center">
-                  Apply Now
-                </Link>
+                <a
+                  href="#mentorship-form"
+                  className="btn-primary w-full block text-center"
+                >
+                  Apply Below
+                </a>
+              </div>
+            </div>
+          </div>
+
+          {/* Application form */}
+          <div id="mentorship-form" className="mt-20 pt-16 border-t border-blush/20">
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-16">
+              <div className="lg:col-span-4">
+                <p className="font-body text-[0.65rem] uppercase tracking-[0.2em] text-rosewood/60 mb-6">
+                  Apply
+                </p>
+                <h3 className="font-heading text-3xl text-navy font-light leading-tight mb-6">
+                  Tell me where you are.
+                </h3>
+                <div className="h-px w-10 bg-blush/40 mb-8" />
+                <p className="font-body text-sm text-navy/55 leading-relaxed">
+                  I review every application personally. If the mentorship is
+                  the right fit, I will be in touch within 3–5 business days to
+                  discuss next steps.
+                </p>
+                <p className="font-body text-sm text-navy/40 leading-relaxed mt-4">
+                  Applications go to{" "}
+                  <span className="text-navy/60">
+                    marija@thesoftpowermethod.com
+                  </span>
+                </p>
+              </div>
+              <div className="lg:col-span-8">
+                <MentorshipForm />
               </div>
             </div>
           </div>
@@ -356,8 +412,8 @@ export default function WorkWithMePage() {
         <div className="max-w-7xl mx-auto px-6 lg:px-10">
           <div className="max-w-2xl">
             <p className="font-heading text-2xl sm:text-3xl italic text-ivory/60 leading-relaxed mb-8">
-              "If you are unsure where to start —
-              <span className="text-gold"> start with the Assessment.</span>
+              "If you are unsure where to start —{" "}
+              <span className="text-gold">start with the Assessment.</span>
               <br />
               It will show you exactly where you are."
             </p>

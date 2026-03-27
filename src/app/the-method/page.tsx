@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "The Method",
+  title: "The Method | Identity-Based Leadership for Women",
   description:
-    "The Soft Power Method works through four areas of development — Identity, Integrity, Stability, and Standards — returning women to their center so they can build everything else from there.",
+    "The Soft Power Method works through four areas — Identity, Integrity, Stability, and Standards — returning women in leadership to their center. Discover the four archetypes: Survival Achiever, Emerging Standard, Regulated Leader, Soft Power Woman.",
 };
 
 const pillars = [

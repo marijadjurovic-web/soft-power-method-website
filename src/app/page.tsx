@@ -228,33 +228,26 @@ export default function HomePage() {
               {
                 title: "Clarity Session",
                 detail: "90 minutes · One session",
-                price: "500€",
                 description:
                   "A single, structured session to identify exactly where you are, what pattern is most active, and what the precise next step is. You leave with a clear picture and a clear direction.",
                 cta: "Learn More →",
               },
               {
-                title: "1:1 Mentorship",
+                title: "Soft Power Mentorship",
                 detail: "8 weeks · Weekly sessions",
-                price: "1.800€",
                 description:
                   "Structured recalibration across the four areas of the Soft Power Method — with precision, depth, and a clear arc from start to finish. Not open-ended. Each session has an objective.",
                 cta: "Learn More →",
               },
             ].map((service) => (
               <div key={service.title} className="card-bordered">
-                <div className="flex items-start justify-between mb-2">
-                  <h3 className="font-heading text-2xl text-navy font-medium">
-                    {service.title}
-                  </h3>
-                  <span className="font-heading text-2xl text-gold ml-4">
-                    {service.price}
-                  </span>
-                </div>
+                <h3 className="font-heading text-2xl text-navy font-medium mb-2">
+                  {service.title}
+                </h3>
                 <span className="font-body text-[0.65rem] uppercase tracking-[0.2em] text-navy/35 block mb-8">
                   {service.detail}
                 </span>
-                <div className="h-px bg-navy/8 mb-8" />
+                <div className="h-px bg-blush/25 mb-8" />
                 <p className="font-body text-sm text-navy/55 leading-relaxed mb-10">
                   {service.description}
                 </p>
