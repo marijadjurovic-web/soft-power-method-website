@@ -76,7 +76,7 @@ export default function ContactPage() {
                   },
                   {
                     label: "Soft Power Mentorship",
-                    detail: "8 weeks",
+                    detail: "6 weeks",
                   },
                 ].map((item) => (
                   <div

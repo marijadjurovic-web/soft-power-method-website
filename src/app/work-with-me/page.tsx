@@ -320,7 +320,7 @@ export default function WorkWithMePage() {
                 <ul className="space-y-3">
                   {[
                     "You know something fundamental needs to shift — not just a surface behavior",
-                    "You are willing to do precise, deliberate work over eight weeks",
+                    "You are willing to do precise, deliberate work over six weeks",
                     "You want a structured process, not open-ended support",
                     "You are ready for the full recalibration process",
                   ].map((item) => (
@@ -347,7 +347,8 @@ export default function WorkWithMePage() {
                 <div className="h-px bg-navy/8 mb-8" />
                 <ul className="space-y-3 mb-10">
                   {[
-                    "8 × 60-minute video sessions",
+                    "Free 20-min discovery call",
+                    "6 × 60-minute video sessions",
                     "Pre-program assessment review",
                     "Session notes & materials",
                     "Application required",
@@ -372,7 +373,37 @@ export default function WorkWithMePage() {
           </div>
 
           {/* Application form */}
-          <div id="mentorship-form" className="mt-20 pt-16 border-t border-blush/20">
+          {/* Discovery call */}
+          <div className="mt-16 pt-14 border-t border-blush/20">
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">
+              <div className="lg:col-span-1" />
+              <div className="lg:col-span-10">
+                <p className="font-body text-[0.65rem] uppercase tracking-[0.2em] text-rosewood/60 mb-6">
+                  Before We Begin
+                </p>
+                <h3 className="font-heading text-3xl text-navy font-light leading-tight mb-6">
+                  A free 20-minute call. Not a sales call.
+                </h3>
+                <div className="h-px w-10 bg-blush/40 mb-8" />
+                <div className="space-y-4 font-body text-base text-navy/60 leading-relaxed max-w-2xl">
+                  <p>
+                    Before the program begins, there is a free 20-minute
+                    discovery call. This call is a mutual decision. Both Marija
+                    and the client decide together whether the work is the right
+                    fit.
+                  </p>
+                  <p>
+                    It is not a sales call. It is an assessment from both sides.
+                    After the call, if both agree, we build the schedule and
+                    plan together.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Application form */}
+          <div id="mentorship-form" className="mt-16 pt-14 border-t border-blush/20">
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-16">
               <div className="lg:col-span-4">
                 <p className="font-body text-[0.65rem] uppercase tracking-[0.2em] text-rosewood/60 mb-6">
@@ -383,9 +414,9 @@ export default function WorkWithMePage() {
                 </h3>
                 <div className="h-px w-10 bg-blush/40 mb-8" />
                 <p className="font-body text-sm text-navy/55 leading-relaxed">
-                  I review every application personally. If the mentorship is
-                  the right fit, I will be in touch within 3–5 business days to
-                  discuss next steps.
+                  I review every application personally. If the fit is right, I
+                  will be in touch within 3 to 5 business days to schedule the
+                  discovery call.
                 </p>
                 <p className="font-body text-sm text-navy/40 leading-relaxed mt-4">
                   Applications go to{" "}
