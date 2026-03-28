@@ -50,7 +50,7 @@ export default function WorkWithMePage() {
             </p>
             <p className="font-body text-base text-navy/60 leading-relaxed">
               If you are unsure which is right for you, start with the Clarity
-              Session. It will show you exactly where you are — and what the
+              Session. It will show you exactly where you are. And what the
               right next step is.
             </p>
           </div>
@@ -108,7 +108,7 @@ export default function WorkWithMePage() {
                     {
                       step: "Before",
                       description:
-                        "Short written intake form — 10 minutes, designed to orient the session precisely.",
+                        "Short written intake form. 10 minutes, designed to orient the session precisely.",
                     },
                     {
                       step: "Session",
@@ -118,7 +118,7 @@ export default function WorkWithMePage() {
                     {
                       step: "After",
                       description:
-                        "Written summary of findings and one clear next step. Not a vague action list — one precise direction.",
+                        "Written summary of findings and one clear next step. Not a vague action list. One precise direction.",
                     },
                   ].map((item) => (
                     <li key={item.step} className="flex gap-6">
@@ -146,7 +146,7 @@ export default function WorkWithMePage() {
                   ].map((item) => (
                     <li key={item} className="flex items-start gap-3">
                       <span className="text-blush/60 mt-1 text-xs flex-shrink-0">
-                        —
+                        ·
                       </span>
                       <span className="font-body text-sm text-navy/55 leading-relaxed">
                         {item}
@@ -244,26 +244,27 @@ export default function WorkWithMePage() {
                   Soft Power Mentorship
                 </h2>
                 <span className="font-body text-[0.65rem] uppercase tracking-[0.2em] text-navy/35">
-                  8 weeks · Weekly sessions
+                  6 weeks · Weekly sessions
                 </span>
               </div>
 
               <div className="h-px bg-navy/8" />
 
               <div className="space-y-5 font-body text-base text-navy/60 leading-relaxed">
-                <p>
-                  Eight weeks of structured recalibration. We work through the
-                  four areas of the Soft Power Method — Identity, Integrity,
-                  Stability, Standards — with precision and depth.
+                <p className="font-heading text-xl italic text-navy/70">
+                  A 6-week structural recalibration for women who are already
+                  achieving, but not from stability.
                 </p>
                 <p>
-                  This is not open-ended conversation. Each session has a clear
-                  objective. Each week builds on the last. The arc is
-                  deliberate.
+                  We work through the four areas of the Soft Power Method:
+                  Identity, Integrity, Stability, and Standards. Each session
+                  has a clear objective. Each week builds on the last. The arc
+                  is deliberate.
                 </p>
                 <p className="font-medium text-navy/80">
                   This is not coaching in the conventional sense. It is
-                  methodical recalibration for women in leadership.
+                  methodical recalibration for women in leadership who are
+                  ready to lead from structure, not from pressure.
                 </p>
               </div>
 
@@ -274,28 +275,22 @@ export default function WorkWithMePage() {
                 <div className="space-y-4">
                   {[
                     {
-                      weeks: "Week 1–2",
+                      weeks: "Week 1-2",
                       focus: "Identity",
                       description:
-                        "Assessment review and deep work on identity — who you are outside of achievement and performance.",
+                        "Assessment review and deep work on identity. Who you are outside of achievement, performance, and approval.",
                     },
                     {
-                      weeks: "Week 3–4",
+                      weeks: "Week 3-4",
                       focus: "Integrity",
                       description:
-                        "Identifying and closing the gaps between what you think, say, and do.",
+                        "Identifying and closing the gaps between what you think, say, and do. Where the structural fractures are.",
                     },
                     {
-                      weeks: "Week 5–6",
-                      focus: "Stability",
+                      weeks: "Week 5-6",
+                      focus: "Stability, Standards, Integration",
                       description:
-                        "Building emotional regulation as a deliberate practice and leadership tool.",
-                    },
-                    {
-                      weeks: "Week 7–8",
-                      focus: "Standards & Integration",
-                      description:
-                        "Redefining your standards and integrating the work across all four areas.",
+                        "Emotional regulation as a leadership tool. Redefining your standards. Integrating the work across all four areas.",
                     },
                   ].map((item) => (
                     <div
@@ -331,7 +326,7 @@ export default function WorkWithMePage() {
                   ].map((item) => (
                     <li key={item} className="flex items-start gap-3">
                       <span className="text-blush/60 mt-1 text-xs flex-shrink-0">
-                        —
+                        ·
                       </span>
                       <span className="font-body text-sm text-navy/55 leading-relaxed">
                         {item}
@@ -347,7 +342,7 @@ export default function WorkWithMePage() {
               <div className="border border-navy/10 p-10 sticky top-28">
                 <p className="font-heading text-5xl text-gold mb-2">1.200€</p>
                 <p className="font-body text-[0.65rem] uppercase tracking-[0.2em] text-navy/35 mb-8">
-                  8 weeks · Weekly sessions
+                  6 weeks · Weekly sessions
                 </p>
                 <div className="h-px bg-navy/8 mb-8" />
                 <ul className="space-y-3 mb-10">

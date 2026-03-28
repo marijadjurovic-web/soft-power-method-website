@@ -4,13 +4,13 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "About Marija Djurović | Founder",
   description:
-    "Marija Djurović is the founder of The Soft Power Method — an identity-based leadership methodology for women in leadership. Not a coach. Not a motivator. A pattern recognizer.",
+    "Marija Djurović is the founder of The Soft Power Method, an identity-based leadership methodology for women in leadership. Not a coach. Not a motivator. A pattern recognizer.",
 };
 
 export default function AboutPage() {
   return (
     <>
-      {/* ── PAGE HEADER ─────────────────────────────────────────── */}
+      {/* PAGE HEADER */}
       <section className="min-h-[60vh] bg-navy flex items-end relative overflow-hidden">
         <div
           className="absolute inset-0 pointer-events-none"
@@ -36,7 +36,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* ── INTRO STATEMENT ────────────────────────────────────── */}
+      {/* INTRO STATEMENT */}
       <section className="py-28 bg-ivory">
         <div className="max-w-7xl mx-auto px-6 lg:px-10">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-20 items-start">
@@ -67,21 +67,17 @@ export default function AboutPage() {
                 <div className="h-px w-14 bg-gold/40 mb-8" />
                 <div className="space-y-5 font-body text-base text-navy/60 leading-relaxed">
                   <p>
-                    I am not here to hype you up, help you push harder, or
-                    convince you to believe in yourself more. You have had enough
-                    of temporary solutions. What you need — and what I build — is
-                    permanent.
+                    I am not here to hype you up or help you push harder. You
+                    have had enough of temporary solutions. What you need, and
+                    what I build, is permanent.
                   </p>
                   <p>
-                    I have spent years working with women who, by every external
-                    measure, were succeeding. Running companies. Leading teams.
-                    Closing deals. And privately — eroding. Not because they
-                    lacked skill. But because the infrastructure beneath their
-                    leadership was built on conditions.
-                  </p>
-                  <p>
-                    On other people&apos;s definitions of enough. On a version of
-                    themselves that was constructed to survive, not to lead.
+                    I have spent years working with women who were succeeding by
+                    every external measure. Running companies. Leading teams.
+                    Closing deals. And privately eroding. Not because they
+                    lacked skill, but because the infrastructure beneath their
+                    leadership was built on conditions. On definitions of enough
+                    that were never theirs.
                   </p>
                   <p>
                     I built The Soft Power Method because I kept seeing the same
@@ -93,7 +89,7 @@ export default function AboutPage() {
               <div className="border-l-2 border-gold/40 pl-8 py-2">
                 <p className="font-heading text-2xl italic text-navy/70 leading-relaxed">
                   "I am a pattern recognizer. A structure builder. Not a coach
-                  in the conventional sense — something more precise."
+                  in the conventional sense. Something more precise."
                 </p>
               </div>
 
@@ -107,21 +103,18 @@ export default function AboutPage() {
                 <div className="h-px w-14 bg-gold/40 mb-8" />
                 <div className="space-y-5 font-body text-base text-navy/60 leading-relaxed">
                   <p>
-                    My work is rooted in structure and precision. I do not work
-                    with feelings for the sake of feelings. I work with the
-                    architecture underneath the feelings — the beliefs, the
-                    thresholds, the standards that determine how you show up, what
-                    you accept, and what you build.
+                    My work is rooted in structure and precision. I work with
+                    the architecture underneath the performance: the beliefs, the
+                    standards, and the thresholds that determine how you show up,
+                    what you accept, and what you build. Not feelings for the
+                    sake of feelings. The structure underneath them.
                   </p>
                   <p>
-                    I see where the fractures are. Where the performance is
-                    exhausting you. Where you are working against yourself and
-                    calling it discipline. And then we build something different.
-                  </p>
-                  <p>
-                    This is methodical recalibration. It takes precision, not
-                    effort. And it produces something that holds — under pressure,
-                    under growth, under everything that comes with actually leading.
+                    I see where the fractures are. Where you are working against
+                    yourself and calling it discipline. This is methodical
+                    recalibration. It takes precision, not effort. And it
+                    produces something that holds under pressure, under growth,
+                    under everything that comes with actually leading.
                   </p>
                 </div>
               </div>
@@ -130,7 +123,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* ── FOUNDING STATEMENT ─────────────────────────────────── */}
+      {/* FOUNDING STATEMENT */}
       <section className="py-28 bg-navy">
         <div className="max-w-7xl mx-auto px-6 lg:px-10">
           <div className="max-w-3xl mx-auto">
@@ -152,8 +145,8 @@ export default function AboutPage() {
               <p>It expands influence.</p>
               <p>
                 Through structure, standards, and self-regulation, women return
-                to their center — and build companies, decisions, and impact from
-                that place.
+                to their center. They build companies, decisions, and impact
+                from that place.
               </p>
               <p className="font-heading text-xl italic text-gold">
                 Soft Power does not harden women to make them powerful. It
@@ -163,8 +156,8 @@ export default function AboutPage() {
               <p>Authority is internal.</p>
               <p>Standards are self-defined.</p>
               <p className="font-heading text-xl italic text-ivory/70">
-                This is where leadership becomes aligned, sustainable, and deeply
-                embodied.
+                This is where leadership becomes aligned, sustainable, and
+                deeply embodied.
               </p>
               <p className="font-heading text-2xl italic text-gold mt-8">
                 This is the Soft Power Standard.
@@ -183,7 +176,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* ── CTA ────────────────────────────────────────────────── */}
+      {/* CTA */}
       <section className="py-28 bg-ivory">
         <div className="max-w-7xl mx-auto px-6 lg:px-10 text-center">
           <span className="section-label">Next Step</span>

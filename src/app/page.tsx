@@ -2,15 +2,22 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "The Soft Power Method | Leadership for Women",
+  title: "The Soft Power Method | Leadership Methodology for Women",
   description:
-    "A leadership methodology for women who are ready to lead from who they actually are — not from who they have been performing to be.",
+    "The Soft Power Method helps women lead with identity, structure, and stability. Not through pressure, overextension, or self-abandonment. Take the free Soft Power Assessment.",
 };
+
+const recognitionPoints = [
+  "You are functioning, but everything feels heavy.",
+  "You carry more than you should and call it responsibility.",
+  "You make decisions, then question them after.",
+  "You are capable of more, but not like this.",
+];
 
 export default function HomePage() {
   return (
     <>
-      {/* ── HERO ───────────────────────────────────────────────── */}
+      {/* HERO */}
       <section className="min-h-screen bg-navy flex items-center relative overflow-hidden">
         <div
           className="absolute inset-0 pointer-events-none"
@@ -19,10 +26,8 @@ export default function HomePage() {
               "radial-gradient(ellipse 80% 60% at 50% 100%, rgba(194,166,90,0.06) 0%, transparent 70%)",
           }}
         />
-
         <div className="max-w-7xl mx-auto px-6 lg:px-10 pt-32 pb-24 w-full">
           <div className="max-w-3xl">
-            {/* Pre-heading ornament */}
             <div className="flex items-center gap-4 mb-12">
               <span className="text-gold/60 text-xs">✦</span>
               <span className="h-px w-12 bg-gold/30" />
@@ -31,20 +36,22 @@ export default function HomePage() {
               </span>
             </div>
 
-            <h1 className="font-heading text-5xl sm:text-6xl lg:text-[4.5rem] text-ivory leading-[1.08] mb-10 font-light">
-              Strength is calm.
+            <h1 className="font-heading text-5xl sm:text-6xl lg:text-[4.5rem] text-ivory leading-[1.08] mb-8 font-light">
+              You do not need to become
               <br />
-              <span className="text-gold">Authority is internal.</span>
+              someone new.
               <br />
-              Standards are self-defined.
+              <span className="text-gold">
+                You need to stop leading from pressure.
+              </span>
             </h1>
 
-            <div className="h-px w-20 bg-gold/30 mb-10" />
+            <div className="h-px w-20 bg-gold/30 mb-8" />
 
             <p className="font-body text-base sm:text-lg text-ivory/55 leading-relaxed max-w-xl mb-12">
-              The Soft Power Method is a leadership methodology for women who
-              are ready to lead from who they actually are — not from who they
-              have been performing to be.
+              Soft Power Method helps women lead with identity, structure, and
+              stability. Not through pressure, overextension, or
+              self-abandonment.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">
@@ -59,7 +66,43 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ── WHAT IS SOFT POWER ─────────────────────────────────── */}
+      {/* RECOGNITION BLOCK */}
+      <section className="py-24 bg-ivory border-b border-navy/8">
+        <div className="max-w-7xl mx-auto px-6 lg:px-10">
+          <div className="max-w-2xl">
+            <span className="section-label">Recognition</span>
+            <h2 className="section-heading text-3xl sm:text-4xl text-navy mb-10">
+              You might recognize yourself here if
+            </h2>
+            <div className="space-y-0">
+              {recognitionPoints.map((point, i) => (
+                <div
+                  key={i}
+                  className={`flex items-start gap-6 py-5 ${
+                    i < recognitionPoints.length - 1
+                      ? "border-b border-navy/8"
+                      : ""
+                  }`}
+                >
+                  <span className="font-body text-[0.65rem] text-blush/60 uppercase tracking-[0.15em] w-5 flex-shrink-0 pt-0.5">
+                    {String(i + 1).padStart(2, "0")}
+                  </span>
+                  <p className="font-heading text-xl text-navy/80 font-light leading-snug italic">
+                    {point}
+                  </p>
+                </div>
+              ))}
+            </div>
+            <div className="mt-10">
+              <p className="font-heading text-lg italic text-rosewood/70">
+                Pressure is not ambition.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* WHAT IS SOFT POWER */}
       <section className="py-28 bg-ivory">
         <div className="max-w-7xl mx-auto px-6 lg:px-10">
           <div className="max-w-2xl mx-auto text-center">
@@ -68,20 +111,23 @@ export default function HomePage() {
               This is not about becoming more.
             </h2>
             <div className="h-px w-14 bg-gold/40 mx-auto mb-10" />
-            <p className="font-body text-base text-navy/55 leading-relaxed mb-6">
-              Most leadership development asks women to add — more skills, more
-              confidence, more strategy. The Soft Power Method removes. It
-              strips back the accumulated performance and returns you to a
-              foundation that is yours.
+            <p className="font-body text-base text-navy/55 leading-relaxed mb-8">
+              Most leadership approaches ask women to add. More strategy, more
+              confidence, more performance. The Soft Power Method works at the
+              level of identity and structure. It removes the accumulated
+              performance and returns you to a foundation that holds.
             </p>
-            <p className="font-heading text-xl italic text-navy/70 leading-relaxed">
+            <p className="font-heading text-xl italic text-navy/70 leading-relaxed mb-4">
               Not softer. Not harder. More precisely yourself.
+            </p>
+            <p className="font-body text-sm text-rosewood/70 uppercase tracking-[0.15em]">
+              You do not need more strategy. You need stability.
             </p>
           </div>
         </div>
       </section>
 
-      {/* ── THREE PRINCIPLES ───────────────────────────────────── */}
+      {/* THREE PRINCIPLES */}
       <section className="py-28 bg-navy/[0.03] border-y border-navy/8">
         <div className="max-w-7xl mx-auto px-6 lg:px-10">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-14 md:gap-10">
@@ -89,23 +135,20 @@ export default function HomePage() {
               {
                 roman: "I",
                 heading: "Know who you are\nwhen no one is watching.",
-                body: "Leadership becomes consistent only when your sense of self is not contingent on outcome, approval, or result.",
+                body: "Leadership becomes consistent only when your sense of self is not contingent on outcome, approval, or result. Identity in leadership is the foundation, not a starting point.",
               },
               {
                 roman: "II",
                 heading: "Build from alignment,\nnot from effort.",
-                body: "When what you think, say, and do are in structural alignment — leading stops feeling like labor.",
+                body: "When what you think, say, and do are in structural alignment, leading stops feeling like labor. The effort required drops. The results do not.",
               },
               {
                 roman: "III",
                 heading: "Define your standard.\nThen hold it.",
-                body: "Not your industry's standard. Not your past's standard. Not the standard built from fear. Yours.",
+                body: "Not your industry standard. Not the standard built from fear. Yours. Standards that are genuinely yours create sustainable leadership, not performance.",
               },
             ].map((item) => (
-              <div
-                key={item.roman}
-                className="text-center md:text-left"
-              >
+              <div key={item.roman} className="text-center md:text-left">
                 <span className="font-heading text-4xl text-gold/20 block mb-6 font-light">
                   {item.roman}
                 </span>
@@ -121,7 +164,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ── FOUNDING STATEMENT QUOTE ───────────────────────────── */}
+      {/* FOUNDING STATEMENT QUOTE */}
       <section className="py-32 bg-navy relative">
         <div
           className="absolute inset-0 pointer-events-none"
@@ -142,13 +185,16 @@ export default function HomePage() {
             </p>
           </blockquote>
           <div className="h-px w-12 bg-gold/30 mx-auto mb-8" />
-          <cite className="font-body text-[0.65rem] uppercase tracking-[0.25em] text-ivory/30 not-italic">
-            Soft Power — Founding Statement
+          <p className="font-heading text-lg italic text-ivory/30 mb-3">
+            Real power should feel clean.
+          </p>
+          <cite className="font-body text-[0.65rem] uppercase tracking-[0.25em] text-ivory/20 not-italic">
+            The Soft Power Founding Statement
           </cite>
         </div>
       </section>
 
-      {/* ── ASSESSMENT CTA ─────────────────────────────────────── */}
+      {/* ASSESSMENT CTA */}
       <section className="py-28 bg-ivory">
         <div className="max-w-7xl mx-auto px-6 lg:px-10">
           <div className="max-w-2xl mx-auto text-center">
@@ -158,10 +204,10 @@ export default function HomePage() {
             </h2>
             <div className="h-px w-14 bg-gold/40 mx-auto mb-10" />
             <p className="font-body text-base text-navy/55 leading-relaxed mb-12">
-              The Soft Power Assessment is a diagnostic instrument — not a quiz.
-              It shows you your current position in the development of your
-              leadership, clearly and without flattery. The result places you in
-              one of four developmental positions. This is your map.
+              The Soft Power Assessment is a diagnostic instrument, not a quiz.
+              It shows your current position in leadership development, clearly
+              and without flattery. The result places you in one of four
+              positions. This is your map.
             </p>
             <Link href="/assessment" className="btn-primary">
               Take the Free Assessment
@@ -170,11 +216,10 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ── ABOUT MARIJA TEASER ────────────────────────────────── */}
+      {/* ABOUT MARIJA TEASER */}
       <section className="py-28 bg-navy/[0.03] border-t border-navy/8">
         <div className="max-w-7xl mx-auto px-6 lg:px-10">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-20 items-center">
-            {/* Text */}
             <div className="order-2 md:order-1">
               <span className="section-label">The Founder</span>
               <h2 className="section-heading text-4xl sm:text-5xl text-navy mb-8">
@@ -184,8 +229,8 @@ export default function HomePage() {
               <p className="font-body text-base text-navy/55 leading-relaxed mb-6">
                 I am Marija Djurović. I am not a motivational speaker. I am not
                 here to help you believe in yourself more or push harder. I am a
-                pattern recognizer — and what I build with the women I work with
-                is permanent.
+                pattern recognizer. What I build with the women I work with is
+                permanent.
               </p>
               <p className="font-body text-base text-navy/55 leading-relaxed mb-12">
                 Not temporary inspiration. Structural recalibration.
@@ -194,8 +239,6 @@ export default function HomePage() {
                 About Marija →
               </Link>
             </div>
-
-            {/* Photo */}
             <div className="order-1 md:order-2">
               <div className="aspect-[4/5] bg-navy/5 relative overflow-hidden">
                 <img
@@ -203,7 +246,6 @@ export default function HomePage() {
                   alt="Marija Djurović, Founder of The Soft Power Method"
                   className="w-full h-full object-cover object-top"
                 />
-                {/* Decorative inner border */}
                 <div className="absolute inset-4 border border-gold/15 pointer-events-none" />
               </div>
             </div>
@@ -211,7 +253,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ── WORK WITH ME TEASER ────────────────────────────────── */}
+      {/* WORK WITH ME TEASER */}
       <section className="py-28 bg-ivory border-t border-navy/8">
         <div className="max-w-7xl mx-auto px-6 lg:px-10">
           <div className="text-center mb-18">
@@ -222,21 +264,20 @@ export default function HomePage() {
               Both are structured.
             </h2>
           </div>
-
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto mt-16">
             {[
               {
                 title: "Clarity Session",
                 detail: "90 minutes · One session",
                 description:
-                  "A single, structured session to identify exactly where you are, what pattern is most active, and what the precise next step is. You leave with a clear picture and a clear direction.",
+                  "A single, structured session to identify where you are, what pattern is most active, and what the precise next step is. You leave with a clear picture and a clear direction.",
                 cta: "Learn More →",
               },
               {
                 title: "Soft Power Mentorship",
-                detail: "8 weeks · Weekly sessions",
+                detail: "6 weeks · Weekly sessions",
                 description:
-                  "Structured recalibration across the four areas of the Soft Power Method — with precision, depth, and a clear arc from start to finish. Not open-ended. Each session has an objective.",
+                  "A 6-week structural recalibration for women who are already achieving, but not from stability.",
                 cta: "Learn More →",
               },
             ].map((service) => (
