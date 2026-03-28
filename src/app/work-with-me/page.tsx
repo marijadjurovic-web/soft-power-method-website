@@ -418,12 +418,6 @@ export default function WorkWithMePage() {
                   will be in touch within 3 to 5 business days to schedule the
                   discovery call.
                 </p>
-                <p className="font-body text-sm text-navy/40 leading-relaxed mt-4">
-                  Applications go to{" "}
-                  <span className="text-navy/60">
-                    marija@thesoftpowermethod.com
-                  </span>
-                </p>
               </div>
               <div className="lg:col-span-8">
                 <MentorshipForm />
