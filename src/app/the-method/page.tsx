@@ -34,64 +34,6 @@ const pillars = [
   },
 ];
 
-const archetypes = [
-  {
-    name: "Survival Achiever",
-    indicator: "01",
-    color: "border-rosewood/30 hover:border-rosewood/60",
-    accentColor: "text-rosewood",
-    description:
-      "High output, genuine results, fragile foundation. Operating from threat-avoidance rather than direction. The engine is running, but the fuel is fear. Results are real. The cost is invisible until it is not.",
-    markers: [
-      "Difficulty slowing down or resting without anxiety",
-      "Achievement feels relieving, not satisfying",
-      "Identity is heavily tied to output and productivity",
-      "Chronic low-grade sense of not being enough",
-    ],
-  },
-  {
-    name: "Emerging Standard",
-    indicator: "02",
-    color: "border-blush/40 hover:border-blush/70",
-    accentColor: "text-plum",
-    description:
-      "The old operating system is visibly breaking down. You are beginning to feel the difference between performance and presence. The work of recalibration is beginning. It is disorienting, because the structures you relied on are no longer working.",
-    markers: [
-      "Sense that something fundamental needs to change",
-      "Starting to question old definitions of success",
-      "Inconsistency between internal state and external presentation",
-      "Beginning to build internal reference points",
-    ],
-  },
-  {
-    name: "Regulated Leader",
-    indicator: "03",
-    color: "border-gold/30 hover:border-gold/60",
-    accentColor: "text-gold",
-    description:
-      "Internal regulation is established. Identity is clearer. Standards are forming. Leadership is becoming more consistent and less reactive. The foundation is solid enough to build from. You are beginning to build deliberately.",
-    markers: [
-      "Emotional regulation is more consistent",
-      "Clearer sense of personal values and limits",
-      "Less reactivity in difficult situations",
-      "Beginning to make decisions from direction rather than avoidance",
-    ],
-  },
-  {
-    name: "Soft Power Woman",
-    indicator: "04",
-    color: "border-navy/30 hover:border-gold/50",
-    accentColor: "text-navy",
-    description:
-      "Fully recalibrated. Authority is internal. Standards are self-defined. Leadership is an expression of who you are, not a performance of what is expected. Influence is a byproduct. Consistent, without effort, because it comes from alignment.",
-    markers: [
-      "Leading from clarity, not from performance",
-      "Standards hold under pressure without effort",
-      "Identity stable regardless of external conditions",
-      "Influence is natural, not engineered",
-    ],
-  },
-];
 
 export default function TheMethodPage() {
   return (
@@ -234,51 +176,26 @@ export default function TheMethodPage() {
       {/* FOUR ARCHETYPES */}
       <section className="py-36 bg-ivory">
         <div className="max-w-7xl mx-auto px-6 lg:px-10">
-          <div className="text-center mb-24">
+          <div className="max-w-2xl">
             <span className="section-label">The Four Positions</span>
-            <h2 className="section-heading text-4xl sm:text-5xl text-navy mb-8">
-              Where do you find yourself?
+            <h2 className="section-heading text-4xl sm:text-5xl text-navy mb-10">
+              Where Are You Now?
             </h2>
-            <p className="font-body text-base text-navy/50 max-w-lg mx-auto">
-              The assessment reveals your current position across the four
-              areas. Each position is a stage, not a verdict.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {archetypes.map((archetype) => (
-              <div
-                key={archetype.name}
-                className={`border p-14 transition-colors duration-300 ${archetype.color}`}
-              >
-                <div className="flex items-start justify-between mb-8">
-                  <h3 className="font-heading text-2xl text-navy font-medium">
-                    {archetype.name}
-                  </h3>
-                  <span
-                    className={`font-body text-[0.65rem] uppercase tracking-[0.2em] ${archetype.accentColor} opacity-60`}
-                  >
-                    {archetype.indicator}
-                  </span>
-                </div>
-                <div className="h-px bg-navy/8 mb-10" />
-                <p className="font-body text-sm text-navy/60 mb-10">
-                  {archetype.description}
-                </p>
-                <ul className="space-y-2">
-                  {archetype.markers.map((marker) => (
-                    <li key={marker} className="flex items-start gap-3">
-                      <span className="text-blush/50 mt-1 text-xs flex-shrink-0">
-                        ·
-                      </span>
-                      <span className="font-body text-sm text-navy/50 leading-relaxed">
-                        {marker}
-                      </span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            ))}
+            <div className="h-px w-14 bg-gold/40 mb-12" />
+            <div className="space-y-6 font-body text-base text-navy/60 mb-14">
+              <p>
+                The Soft Power Assessment places you in one of four developmental
+                positions. Each position has a distinct pattern, a distinct
+                pressure point, and a distinct next step.
+              </p>
+              <p>
+                This is not a personality type. It is a map of where you
+                currently are, and what the work from here looks like.
+              </p>
+            </div>
+            <Link href="/assessment" className="btn-primary">
+              Take the free assessment
+            </Link>
           </div>
         </div>
       </section>
