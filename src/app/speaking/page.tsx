@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import SpeakingForm from "@/components/SpeakingForm";
 
 export const metadata: Metadata = {
   title: "Speaking | Keynotes and Workshops for Organizations",
@@ -300,38 +301,61 @@ export default function SpeakingPage() {
         </div>
       </section>
 
-      {/* CTA */}
+      {/* SPEAKING FORM */}
       <section className="py-28 bg-navy">
         <div className="max-w-7xl mx-auto px-6 lg:px-10">
-          <div className="max-w-2xl">
-            <div className="flex items-center gap-4 mb-10">
-              <span className="text-gold/50 text-xs">✦</span>
-              <span className="h-px w-10 bg-gold/30" />
-              <span className="font-body text-[0.65rem] uppercase tracking-[0.3em] text-gold/40">
-                Book a Speaking Engagement
-              </span>
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-20">
+            {/* Info */}
+            <div className="lg:col-span-4">
+              <div className="flex items-center gap-4 mb-10">
+                <span className="text-gold/50 text-xs">✦</span>
+                <span className="h-px w-10 bg-gold/30" />
+                <span className="font-body text-[0.65rem] uppercase tracking-[0.3em] text-gold/40">
+                  Book a Speaking Engagement
+                </span>
+              </div>
+              <h2 className="font-heading text-3xl sm:text-4xl text-ivory font-light leading-tight mb-8">
+                Bring This To Your Organization
+              </h2>
+              <div className="h-px w-14 bg-gold/30 mb-10" />
+              <div className="space-y-5 font-body text-sm text-ivory/50 leading-relaxed">
+                <p>
+                  Fill in the form with as much detail as you have. I will
+                  review the opportunity and be in touch.
+                </p>
+                <p>
+                  Or reach out directly at{" "}
+                  <a
+                    href="mailto:hello@thesoftpowermethod.com"
+                    className="text-gold/70 hover:text-gold transition-colors duration-200"
+                  >
+                    hello@thesoftpowermethod.com
+                  </a>
+                  .
+                </p>
+              </div>
             </div>
-            <h2 className="font-heading text-4xl sm:text-5xl text-ivory font-light leading-tight mb-8">
-              Bring this work to your organization.
-            </h2>
-            <div className="h-px w-14 bg-gold/30 mb-10" />
-            <p className="font-body text-base text-ivory/50 leading-relaxed mb-12">
-              For speaking inquiries, use the contact form or reach out
-              directly. Include the format, event context, and audience size
-              where possible.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 items-start">
-              <Link href="/contact" className="btn-primary">
-                Get in Touch
-              </Link>
-              <a
-                href="mailto:hello@thesoftpowermethod.com"
-                className="font-body text-[0.65rem] uppercase tracking-[0.2em] text-ivory/40 hover:text-gold transition-colors duration-200 pt-4 sm:pt-[1.1rem]"
-              >
-                hello@thesoftpowermethod.com
-              </a>
+
+            {/* Form */}
+            <div className="lg:col-span-8">
+              <SpeakingForm />
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* CTA */}
+      <section className="py-20 bg-navy border-t border-ivory/8">
+        <div className="max-w-7xl mx-auto px-6 lg:px-10 text-center">
+          <p className="font-body text-sm text-ivory/30 leading-relaxed">
+            Not ready to inquire yet?{" "}
+            <Link
+              href="/the-method"
+              className="text-ivory/50 hover:text-gold transition-colors duration-200 underline underline-offset-4"
+            >
+              Learn more about the method.
+            </Link>
+          </p>
         </div>
       </section>
     </>

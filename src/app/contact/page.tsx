@@ -40,7 +40,7 @@ export default function ContactPage() {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-20">
             {/* Info */}
             <div className="lg:col-span-4">
-              <span className="section-label">Inquiries</span>
+              <span className="section-label">Get In Touch</span>
               <h2 className="section-heading text-3xl text-navy mb-8">
                 For inquiries about working together.
               </h2>
@@ -96,6 +96,10 @@ export default function ContactPage() {
 
             {/* Form */}
             <div className="lg:col-span-8">
+              <p className="font-body text-sm text-navy/55 leading-relaxed mb-10">
+                Didn&apos;t find what you were looking for? Not sure where to
+                start? Write directly.
+              </p>
               <ContactForm />
             </div>
           </div>

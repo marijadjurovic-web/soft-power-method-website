@@ -2,13 +2,6 @@
 
 import { useState } from "react";
 
-const subjects = [
-  { value: "clarity-session", label: "Clarity Session" },
-  { value: "mentorship", label: "Soft Power Mentorship" },
-  { value: "speaking", label: "Speaking Engagement" },
-  { value: "other", label: "Other" },
-];
-
 // NOTE: Configure email notifications in Netlify Dashboard → Forms → contact → Notifications
 // Send to: hello@thesoftpowermethod.com
 
@@ -46,7 +39,7 @@ export default function ContactForm() {
           Message received.
         </h3>
         <p className="font-body text-sm text-navy/55">
-          I will be in touch within 2–3 business days.
+          I will be in touch within 2 to 3 business days.
         </p>
       </div>
     );
@@ -97,28 +90,7 @@ export default function ContactForm() {
 
       <div>
         <label className="font-body text-[0.65rem] uppercase tracking-[0.2em] text-navy/40 block mb-3">
-          Subject
-        </label>
-        <select
-          name="subject"
-          required
-          defaultValue=""
-          className="w-full border border-navy/15 bg-ivory px-5 py-4 font-body text-sm text-navy focus:outline-none focus:border-rosewood/40 transition-colors duration-200 appearance-none cursor-pointer"
-        >
-          <option value="" disabled>
-            Select a subject
-          </option>
-          {subjects.map((s) => (
-            <option key={s.value} value={s.value}>
-              {s.label}
-            </option>
-          ))}
-        </select>
-      </div>
-
-      <div>
-        <label className="font-body text-[0.65rem] uppercase tracking-[0.2em] text-navy/40 block mb-3">
-          Message
+          Your message
         </label>
         <textarea
           name="message"
@@ -147,7 +119,7 @@ export default function ContactForm() {
         disabled={status === "submitting"}
         className="btn-primary disabled:opacity-50 disabled:cursor-not-allowed"
       >
-        {status === "submitting" ? "Sending..." : "Send Message"}
+        {status === "submitting" ? "Sending..." : "Send"}
       </button>
     </form>
   );

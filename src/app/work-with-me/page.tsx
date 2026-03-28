@@ -410,7 +410,7 @@ export default function WorkWithMePage() {
                   Apply
                 </p>
                 <h3 className="font-heading text-3xl text-navy font-light leading-tight mb-6">
-                  Tell me where you are.
+                  Apply for Soft Power Mentorship
                 </h3>
                 <div className="h-px w-10 bg-blush/40 mb-8" />
                 <p className="font-body text-sm text-navy/55 leading-relaxed">
