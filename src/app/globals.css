@@ -5,12 +5,14 @@
 @layer base {
   html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
   }
 
   body {
     background-color: #F4EFE8;
     color: #1B2230;
     line-height: 1.75;
+    overflow-x: hidden;
   }
 
   ::selection {

@@ -41,7 +41,7 @@ export default function AboutPage() {
         <div className="max-w-7xl mx-auto px-6 lg:px-10">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-20 items-start">
             {/* Photo */}
-            <div className="sticky top-28 space-y-6">
+            <div className="md:sticky top-28 space-y-6">
               <div className="aspect-[4/5] bg-navy/5 relative overflow-hidden">
                 <img
                   src="/marija-about.JPG"

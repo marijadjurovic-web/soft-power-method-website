@@ -185,7 +185,7 @@ export default function WorkWithMePage() {
 
             {/* Price card */}
             <div className="lg:col-span-4">
-              <div className="border border-navy/10 p-14 sticky top-28">
+              <div className="border border-navy/10 p-14 lg:sticky top-28">
                 <p className="font-heading text-5xl text-gold mb-2">500€</p>
                 <p className="font-body text-[0.65rem] uppercase tracking-[0.2em] text-navy/35 mb-8">
                   One session · 90 minutes
@@ -349,7 +349,7 @@ export default function WorkWithMePage() {
 
             {/* Price card */}
             <div className="lg:col-span-4">
-              <div className="border border-navy/10 p-14 sticky top-28">
+              <div className="border border-navy/10 p-14 lg:sticky top-28">
                 <p className="font-heading text-5xl text-gold mb-2">1.200€</p>
                 <p className="font-body text-[0.65rem] uppercase tracking-[0.2em] text-navy/35 mb-8">
                   6 weeks · Weekly sessions
