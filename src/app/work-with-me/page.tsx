@@ -41,18 +41,28 @@ export default function WorkWithMePage() {
       {/* ── INTRO ──────────────────────────────────────────────── */}
       <section className="py-32 bg-ivory border-b border-navy/8">
         <div className="max-w-7xl mx-auto px-6 lg:px-10">
-          <div className="max-w-2xl">
-            <p className="font-body text-base text-navy/60 leading-relaxed mb-5">
-              There are two ways to work with me. Both are structured. Neither
-              is open-ended. I do not run ongoing, indefinite programs. I run
-              precise processes with a clear beginning, a clear objective, and a
-              clear end.
-            </p>
-            <p className="font-body text-base text-navy/60 leading-relaxed">
-              If you are unsure which is right for you, start with the Clarity
-              Session. It will show you exactly where you are. And what the
-              right next step is.
-            </p>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-20 items-center">
+            <div>
+              <p className="font-body text-base text-navy/60 leading-relaxed mb-5">
+                There are two ways to work with me. Both are structured. Neither
+                is open-ended. I do not run ongoing, indefinite programs. I run
+                precise processes with a clear beginning, a clear objective, and a
+                clear end.
+              </p>
+              <p className="font-body text-base text-navy/60 leading-relaxed">
+                If you are unsure which is right for you, start with the Clarity
+                Session. It will show you exactly where you are. And what the
+                right next step is.
+              </p>
+            </div>
+            <div className="aspect-[4/5] bg-navy/5 relative overflow-hidden">
+              <img
+                src="/marija-work.JPG"
+                alt="Marija Djurović"
+                className="w-full h-full object-cover object-top"
+              />
+              <div className="absolute inset-4 border border-gold/15 pointer-events-none" />
+            </div>
           </div>
         </div>
       </section>

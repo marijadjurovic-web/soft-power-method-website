@@ -34,17 +34,17 @@ export default function Navigation() {
     : "bg-transparent border-b border-transparent";
 
   const textColor = isScrolled || !isHomePage || isMenuOpen ? "text-navy" : "text-ivory";
-  const logoColor = isScrolled || !isHomePage || isMenuOpen ? "border-gold text-gold" : "border-gold/70 text-gold";
-
   return (
     <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${navBg}`}>
       <nav className="max-w-7xl mx-auto px-6 lg:px-10 py-5 flex items-center justify-between">
 
         {/* Logo */}
         <Link href="/" className="flex items-center gap-3 group">
-          <div className={`w-9 h-9 rounded-full border flex items-center justify-center transition-colors duration-300 ${logoColor}`}>
-            <span className="font-heading text-xs font-medium tracking-wide">SP</span>
-          </div>
+          <img
+            src="/logo.png"
+            alt="The Soft Power Method"
+            className="w-9 h-9 object-contain"
+          />
           <span className={`font-body text-[0.65rem] uppercase tracking-[0.25em] hidden sm:block transition-colors duration-300 ${textColor === "text-ivory" ? "text-ivory/70" : "text-navy/60"}`}>
             The Soft Power Method
           </span>

@@ -19,9 +19,11 @@ export default function Footer() {
           {/* Brand column */}
           <div className="space-y-6">
             <div className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-full border border-gold/50 flex items-center justify-center">
-                <span className="font-heading text-gold text-sm">SP</span>
-              </div>
+              <img
+                src="/logo.png"
+                alt="The Soft Power Method"
+                className="w-10 h-10 object-contain"
+              />
               <span className="font-body text-[0.65rem] uppercase tracking-[0.25em] text-ivory/40">
                 The Soft Power Method
               </span>

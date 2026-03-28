@@ -242,7 +242,7 @@ export default function HomePage() {
             <div className="order-1 md:order-2">
               <div className="aspect-[4/5] bg-navy/5 relative overflow-hidden">
                 <img
-                  src="/images/marija.jpg"
+                  src="/marija.jpg"
                   alt="Marija Djurović, Founder of The Soft Power Method"
                   className="w-full h-full object-cover object-top"
                 />

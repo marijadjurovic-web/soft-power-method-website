@@ -41,16 +41,24 @@ export default function AboutPage() {
         <div className="max-w-7xl mx-auto px-6 lg:px-10">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-20 items-start">
             {/* Photo */}
-            <div className="sticky top-28">
+            <div className="sticky top-28 space-y-6">
               <div className="aspect-[4/5] bg-navy/5 relative overflow-hidden">
                 <img
-                  src="/images/marija.jpg"
+                  src="/marija-about.JPG"
                   alt="Marija Djurović"
                   className="w-full h-full object-cover object-top"
                 />
                 <div className="absolute inset-4 border border-gold/15 pointer-events-none" />
               </div>
-              <div className="mt-8 pl-2">
+              <div className="aspect-[4/3] bg-navy/5 relative overflow-hidden">
+                <img
+                  src="/marija-about-2.JPG"
+                  alt="Marija Djurović"
+                  className="w-full h-full object-cover object-center"
+                />
+                <div className="absolute inset-4 border border-gold/15 pointer-events-none" />
+              </div>
+              <div className="pl-2">
                 <p className="font-heading text-lg italic text-navy/50 leading-relaxed">
                   "I am not here to motivate you."
                 </p>
