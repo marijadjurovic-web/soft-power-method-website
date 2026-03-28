@@ -124,14 +124,14 @@ export default function TheMethodPage() {
       </section>
 
       {/* METHOD OVERVIEW */}
-      <section className="py-28 bg-ivory">
+      <section className="py-36 bg-ivory">
         <div className="max-w-7xl mx-auto px-6 lg:px-10">
           <div className="max-w-2xl">
             <span className="section-label">Overview</span>
-            <h2 className="section-heading text-3xl sm:text-4xl text-navy mb-8">
+            <h2 className="section-heading text-3xl sm:text-4xl text-navy mb-10">
               Built on a single premise.
             </h2>
-            <div className="h-px w-14 bg-gold/40 mb-10" />
+            <div className="h-px w-14 bg-gold/40 mb-12" />
             <div className="space-y-5 font-body text-base text-navy/60 leading-relaxed">
               <p>
                 Sustainable leadership requires a stable internal foundation.
@@ -155,9 +155,9 @@ export default function TheMethodPage() {
       </section>
 
       {/* FOUR PILLARS */}
-      <section className="py-28 bg-navy/[0.03] border-y border-navy/8">
+      <section className="py-36 bg-navy/[0.03] border-y border-navy/8">
         <div className="max-w-7xl mx-auto px-6 lg:px-10">
-          <div className="text-center mb-20">
+          <div className="text-center mb-24">
             <span className="section-label">The Four Areas</span>
             <h2 className="section-heading text-4xl sm:text-5xl text-navy">
               Four areas. One foundation.
@@ -168,7 +168,7 @@ export default function TheMethodPage() {
             {pillars.map((pillar, i) => (
               <div
                 key={pillar.name}
-                className={`grid grid-cols-1 md:grid-cols-12 gap-8 py-16 ${
+                className={`grid grid-cols-1 md:grid-cols-12 gap-8 py-20 ${
                   i < pillars.length - 1 ? "border-b border-navy/8" : ""
                 }`}
               >
@@ -183,7 +183,7 @@ export default function TheMethodPage() {
                   </h3>
                 </div>
                 <div className="md:col-span-9">
-                  <p className="font-heading text-xl text-navy font-medium leading-snug mb-5 italic">
+                  <p className="font-heading text-xl text-navy font-medium leading-snug mb-6 italic">
                     {pillar.headline}
                   </p>
                   <p className="font-body text-base text-navy/55 leading-relaxed">
@@ -197,21 +197,21 @@ export default function TheMethodPage() {
       </section>
 
       {/* THE ASSESSMENT */}
-      <section className="py-28 bg-navy">
+      <section className="py-36 bg-navy">
         <div className="max-w-7xl mx-auto px-6 lg:px-10">
           <div className="max-w-2xl">
-            <div className="flex items-center gap-4 mb-10">
+            <div className="flex items-center gap-4 mb-12">
               <span className="text-gold/50 text-xs">✦</span>
               <span className="h-px w-10 bg-gold/30" />
               <span className="font-body text-[0.65rem] uppercase tracking-[0.3em] text-gold/40">
                 The Assessment
               </span>
             </div>
-            <h2 className="font-heading text-4xl sm:text-5xl text-ivory font-light leading-tight mb-8">
+            <h2 className="font-heading text-4xl sm:text-5xl text-ivory font-light leading-tight mb-10">
               The Soft Power Assessment.
             </h2>
-            <div className="h-px w-14 bg-gold/30 mb-10" />
-            <div className="space-y-5 font-body text-base text-ivory/55 leading-relaxed mb-12">
+            <div className="h-px w-14 bg-gold/30 mb-12" />
+            <div className="space-y-5 font-body text-base text-ivory/55 mb-14">
               <p>
                 The Soft Power Assessment is a diagnostic instrument, not a
                 quiz. It was built to act as a mirror: to show you where you
@@ -232,14 +232,14 @@ export default function TheMethodPage() {
       </section>
 
       {/* FOUR ARCHETYPES */}
-      <section className="py-28 bg-ivory">
+      <section className="py-36 bg-ivory">
         <div className="max-w-7xl mx-auto px-6 lg:px-10">
-          <div className="text-center mb-20">
+          <div className="text-center mb-24">
             <span className="section-label">The Four Positions</span>
-            <h2 className="section-heading text-4xl sm:text-5xl text-navy mb-6">
+            <h2 className="section-heading text-4xl sm:text-5xl text-navy mb-8">
               Where do you find yourself?
             </h2>
-            <p className="font-body text-base text-navy/50 max-w-xl mx-auto leading-relaxed">
+            <p className="font-body text-base text-navy/50 max-w-lg mx-auto">
               The assessment reveals your current position across the four
               areas. Each position is a stage, not a verdict.
             </p>
@@ -249,9 +249,9 @@ export default function TheMethodPage() {
             {archetypes.map((archetype) => (
               <div
                 key={archetype.name}
-                className={`border p-10 transition-colors duration-300 ${archetype.color}`}
+                className={`border p-14 transition-colors duration-300 ${archetype.color}`}
               >
-                <div className="flex items-start justify-between mb-6">
+                <div className="flex items-start justify-between mb-8">
                   <h3 className="font-heading text-2xl text-navy font-medium">
                     {archetype.name}
                   </h3>
@@ -261,8 +261,8 @@ export default function TheMethodPage() {
                     {archetype.indicator}
                   </span>
                 </div>
-                <div className="h-px bg-navy/8 mb-8" />
-                <p className="font-body text-sm text-navy/60 leading-relaxed mb-8">
+                <div className="h-px bg-navy/8 mb-10" />
+                <p className="font-body text-sm text-navy/60 mb-10">
                   {archetype.description}
                 </p>
                 <ul className="space-y-2">
@@ -284,15 +284,15 @@ export default function TheMethodPage() {
       </section>
 
       {/* CTA */}
-      <section className="py-28 bg-navy/[0.03] border-t border-navy/8">
+      <section className="py-36 bg-navy/[0.03] border-t border-navy/8">
         <div className="max-w-7xl mx-auto px-6 lg:px-10 text-center">
           <span className="section-label">Ready to Begin</span>
-          <h2 className="section-heading text-4xl sm:text-5xl text-navy mb-8 max-w-xl mx-auto">
+          <h2 className="section-heading text-4xl sm:text-5xl text-navy mb-10 max-w-xl mx-auto">
             Start with the assessment.
             <br />
             It takes 10 minutes.
           </h2>
-          <div className="h-px w-14 bg-gold/40 mx-auto mb-12" />
+          <div className="h-px w-14 bg-gold/40 mx-auto mb-14" />
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/assessment" className="btn-primary">
               Take the Free Assessment

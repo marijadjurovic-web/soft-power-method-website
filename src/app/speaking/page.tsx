@@ -103,15 +103,15 @@ export default function SpeakingPage() {
       </section>
 
       {/* WHAT I SPEAK ABOUT */}
-      <section className="py-28 bg-ivory">
+      <section className="py-36 bg-ivory">
         <div className="max-w-7xl mx-auto px-6 lg:px-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-start">
             <div>
               <span className="section-label">What I Speak About</span>
-              <h2 className="section-heading text-4xl sm:text-5xl text-navy mb-8">
+              <h2 className="section-heading text-4xl sm:text-5xl text-navy mb-10">
                 What happens behind performance.
               </h2>
-              <div className="h-px w-14 bg-gold/40 mb-10" />
+              <div className="h-px w-14 bg-gold/40 mb-12" />
               <div className="space-y-5 font-body text-base text-navy/60 leading-relaxed">
                 <p>
                   I speak about what happens behind performance. Not strategy.
@@ -148,9 +148,9 @@ export default function SpeakingPage() {
       </section>
 
       {/* CORE TOPICS */}
-      <section className="py-28 bg-navy/[0.03] border-y border-navy/8">
+      <section className="py-36 bg-navy/[0.03] border-y border-navy/8">
         <div className="max-w-7xl mx-auto px-6 lg:px-10">
-          <div className="text-center mb-20">
+          <div className="text-center mb-24">
             <span className="section-label">Core Topics</span>
             <h2 className="section-heading text-4xl sm:text-5xl text-navy">
               Four areas. One thread.
@@ -160,9 +160,9 @@ export default function SpeakingPage() {
             {topics.map((topic) => (
               <div
                 key={topic.number}
-                className="border border-navy/10 p-10 hover:border-blush/50 transition-colors duration-300"
+                className="border border-navy/10 p-14 hover:border-blush/50 transition-colors duration-300"
               >
-                <div className="flex items-start justify-between mb-6">
+                <div className="flex items-start justify-between mb-8">
                   <h3 className="font-heading text-2xl text-navy font-medium leading-tight pr-4">
                     {topic.title}
                   </h3>
@@ -170,7 +170,7 @@ export default function SpeakingPage() {
                     {topic.number}
                   </span>
                 </div>
-                <div className="h-px bg-navy/8 mb-6" />
+                <div className="h-px bg-navy/8 mb-8" />
                 <p className="font-body text-sm text-navy/55 leading-relaxed">
                   {topic.body}
                 </p>
@@ -181,10 +181,10 @@ export default function SpeakingPage() {
       </section>
 
       {/* FORMATS */}
-      <section className="py-28 bg-navy">
+      <section className="py-36 bg-navy">
         <div className="max-w-7xl mx-auto px-6 lg:px-10">
-          <div className="mb-16">
-            <div className="flex items-center gap-4 mb-8">
+          <div className="mb-20">
+            <div className="flex items-center gap-4 mb-10">
               <span className="text-gold/50 text-xs">✦</span>
               <span className="h-px w-10 bg-gold/30" />
               <span className="font-body text-[0.65rem] uppercase tracking-[0.3em] text-gold/40">
@@ -200,7 +200,7 @@ export default function SpeakingPage() {
             {formats.map((format, i) => (
               <div
                 key={format.name}
-                className={`p-10 border-navy/15 ${
+                className={`p-14 border-navy/15 ${
                   i % 2 === 0 ? "border-r" : ""
                 } ${i < 2 ? "border-b" : ""} border`}
               >
@@ -212,7 +212,7 @@ export default function SpeakingPage() {
                     {format.duration}
                   </span>
                 </div>
-                <div className="h-px bg-ivory/8 mb-6" />
+                <div className="h-px bg-ivory/8 mb-8" />
                 <p className="font-body text-sm text-ivory/45 leading-relaxed">
                   {format.detail}
                 </p>
@@ -223,15 +223,15 @@ export default function SpeakingPage() {
       </section>
 
       {/* WHO THIS IS FOR */}
-      <section className="py-28 bg-ivory">
+      <section className="py-36 bg-ivory">
         <div className="max-w-7xl mx-auto px-6 lg:px-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
             <div>
               <span className="section-label">Who This Is For</span>
-              <h2 className="section-heading text-4xl sm:text-5xl text-navy mb-8">
+              <h2 className="section-heading text-4xl sm:text-5xl text-navy mb-10">
                 Organizations ready for a different conversation.
               </h2>
-              <div className="h-px w-14 bg-gold/40 mb-10" />
+              <div className="h-px w-14 bg-gold/40 mb-12" />
               <p className="font-body text-base text-navy/55 leading-relaxed">
                 This work is relevant wherever leadership development is taken
                 seriously, and wherever the existing approaches are not
@@ -243,7 +243,7 @@ export default function SpeakingPage() {
                 {audiences.map((item, i) => (
                   <li
                     key={item}
-                    className={`flex items-center gap-6 py-6 ${
+                    className={`flex items-center gap-6 py-7 ${
                       i < audiences.length - 1 ? "border-b border-navy/8" : ""
                     }`}
                   >
@@ -262,15 +262,15 @@ export default function SpeakingPage() {
       </section>
 
       {/* WHAT MAKES THIS DIFFERENT */}
-      <section className="py-28 bg-navy/[0.03] border-y border-navy/8">
+      <section className="py-36 bg-navy/[0.03] border-y border-navy/8">
         <div className="max-w-7xl mx-auto px-6 lg:px-10">
           <div className="max-w-3xl mx-auto">
-            <div className="text-center mb-16">
+            <div className="text-center mb-20">
               <span className="section-label">What Makes This Different</span>
-              <h2 className="section-heading text-4xl sm:text-5xl text-navy mb-6">
+              <h2 className="section-heading text-4xl sm:text-5xl text-navy mb-8">
                 This is not motivational speaking.
               </h2>
-              <div className="h-px w-14 bg-gold/40 mx-auto mb-8" />
+              <div className="h-px w-14 bg-gold/40 mx-auto mb-10" />
               <p className="font-body text-base text-navy/55 leading-relaxed">
                 Motivation is temporary. Recognition is structural. People leave
                 these sessions with something that does not fade by the next
@@ -284,7 +284,7 @@ export default function SpeakingPage() {
               {differences.map((item, i) => (
                 <div
                   key={i}
-                  className={`flex items-start gap-8 py-8 ${
+                  className={`flex items-start gap-8 py-10 ${
                     i < differences.length - 1 ? "border-b border-navy/8" : ""
                   }`}
                 >
@@ -302,22 +302,22 @@ export default function SpeakingPage() {
       </section>
 
       {/* SPEAKING FORM */}
-      <section className="py-28 bg-navy">
+      <section className="py-36 bg-navy">
         <div className="max-w-7xl mx-auto px-6 lg:px-10">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-20">
             {/* Info */}
             <div className="lg:col-span-4">
-              <div className="flex items-center gap-4 mb-10">
+              <div className="flex items-center gap-4 mb-12">
                 <span className="text-gold/50 text-xs">✦</span>
                 <span className="h-px w-10 bg-gold/30" />
                 <span className="font-body text-[0.65rem] uppercase tracking-[0.3em] text-gold/40">
                   Book a Speaking Engagement
                 </span>
               </div>
-              <h2 className="font-heading text-3xl sm:text-4xl text-ivory font-light leading-tight mb-8">
+              <h2 className="font-heading text-3xl sm:text-4xl text-ivory font-light leading-tight mb-10">
                 Bring This To Your Organization
               </h2>
-              <div className="h-px w-14 bg-gold/30 mb-10" />
+              <div className="h-px w-14 bg-gold/30 mb-12" />
               <div className="space-y-5 font-body text-sm text-ivory/50 leading-relaxed">
                 <p>
                   Fill in the form with as much detail as you have. I will

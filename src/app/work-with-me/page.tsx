@@ -39,7 +39,7 @@ export default function WorkWithMePage() {
       </section>
 
       {/* ── INTRO ──────────────────────────────────────────────── */}
-      <section className="py-24 bg-ivory border-b border-navy/8">
+      <section className="py-32 bg-ivory border-b border-navy/8">
         <div className="max-w-7xl mx-auto px-6 lg:px-10">
           <div className="max-w-2xl">
             <p className="font-body text-base text-navy/60 leading-relaxed mb-5">
@@ -58,7 +58,7 @@ export default function WorkWithMePage() {
       </section>
 
       {/* ── CLARITY SESSION ────────────────────────────────────── */}
-      <section id="clarity-session" className="py-28 bg-ivory">
+      <section id="clarity-session" className="py-36 bg-ivory">
         <div className="max-w-7xl mx-auto px-6 lg:px-10">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-16">
             {/* Label */}
@@ -175,7 +175,7 @@ export default function WorkWithMePage() {
 
             {/* Price card */}
             <div className="lg:col-span-4">
-              <div className="border border-navy/10 p-10 sticky top-28">
+              <div className="border border-navy/10 p-14 sticky top-28">
                 <p className="font-heading text-5xl text-gold mb-2">500€</p>
                 <p className="font-body text-[0.65rem] uppercase tracking-[0.2em] text-navy/35 mb-8">
                   One session · 90 minutes
@@ -224,7 +224,7 @@ export default function WorkWithMePage() {
       </div>
 
       {/* ── SOFT POWER MENTORSHIP ──────────────────────────────── */}
-      <section id="mentorship" className="py-28 bg-ivory">
+      <section id="mentorship" className="py-36 bg-ivory">
         <div className="max-w-7xl mx-auto px-6 lg:px-10">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-16">
             {/* Label */}
@@ -339,7 +339,7 @@ export default function WorkWithMePage() {
 
             {/* Price card */}
             <div className="lg:col-span-4">
-              <div className="border border-navy/10 p-10 sticky top-28">
+              <div className="border border-navy/10 p-14 sticky top-28">
                 <p className="font-heading text-5xl text-gold mb-2">1.200€</p>
                 <p className="font-body text-[0.65rem] uppercase tracking-[0.2em] text-navy/35 mb-8">
                   6 weeks · Weekly sessions
@@ -374,17 +374,17 @@ export default function WorkWithMePage() {
 
           {/* Application form */}
           {/* Discovery call */}
-          <div className="mt-16 pt-14 border-t border-blush/20">
+          <div className="mt-20 pt-16 border-t border-blush/20">
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">
               <div className="lg:col-span-1" />
               <div className="lg:col-span-10">
                 <p className="font-body text-[0.65rem] uppercase tracking-[0.2em] text-rosewood/60 mb-6">
                   Before We Begin
                 </p>
-                <h3 className="font-heading text-3xl text-navy font-light leading-tight mb-6">
+                <h3 className="font-heading text-3xl text-navy font-light leading-tight mb-8">
                   A free 20-minute call. Not a sales call.
                 </h3>
-                <div className="h-px w-10 bg-blush/40 mb-8" />
+                <div className="h-px w-10 bg-blush/40 mb-10" />
                 <div className="space-y-4 font-body text-base text-navy/60 leading-relaxed max-w-2xl">
                   <p>
                     Before the program begins, there is a free 20-minute
@@ -403,16 +403,16 @@ export default function WorkWithMePage() {
           </div>
 
           {/* Application form */}
-          <div id="mentorship-form" className="mt-16 pt-14 border-t border-blush/20">
+          <div id="mentorship-form" className="mt-20 pt-16 border-t border-blush/20">
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-16">
               <div className="lg:col-span-4">
                 <p className="font-body text-[0.65rem] uppercase tracking-[0.2em] text-rosewood/60 mb-6">
                   Apply
                 </p>
-                <h3 className="font-heading text-3xl text-navy font-light leading-tight mb-6">
+                <h3 className="font-heading text-3xl text-navy font-light leading-tight mb-8">
                   Apply for Soft Power Mentorship
                 </h3>
-                <div className="h-px w-10 bg-blush/40 mb-8" />
+                <div className="h-px w-10 bg-blush/40 mb-10" />
                 <p className="font-body text-sm text-navy/55 leading-relaxed">
                   I review every application personally. If the fit is right, I
                   will be in touch within 3 to 5 business days to schedule the
@@ -434,7 +434,7 @@ export default function WorkWithMePage() {
       </section>
 
       {/* ── CLOSING NOTE ───────────────────────────────────────── */}
-      <section className="py-24 bg-navy">
+      <section className="py-32 bg-navy">
         <div className="max-w-7xl mx-auto px-6 lg:px-10">
           <div className="max-w-2xl">
             <p className="font-heading text-2xl sm:text-3xl italic text-ivory/60 leading-relaxed mb-8">

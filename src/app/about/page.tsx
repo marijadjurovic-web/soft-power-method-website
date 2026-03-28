@@ -37,7 +37,7 @@ export default function AboutPage() {
       </section>
 
       {/* INTRO STATEMENT */}
-      <section className="py-28 bg-ivory">
+      <section className="py-36 bg-ivory">
         <div className="max-w-7xl mx-auto px-6 lg:px-10">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-20 items-start">
             {/* Photo */}
@@ -58,13 +58,13 @@ export default function AboutPage() {
             </div>
 
             {/* Text */}
-            <div className="space-y-10">
+            <div className="space-y-14">
               <div>
                 <span className="section-label">Who I Am</span>
-                <h2 className="section-heading text-3xl sm:text-4xl text-navy mb-8">
+                <h2 className="section-heading text-3xl sm:text-4xl text-navy mb-10">
                   I am not a motivational speaker.
                 </h2>
-                <div className="h-px w-14 bg-gold/40 mb-8" />
+                <div className="h-px w-14 bg-gold/40 mb-10" />
                 <div className="space-y-5 font-body text-base text-navy/60 leading-relaxed">
                   <p>
                     I am not here to hype you up or help you push harder. You
@@ -86,7 +86,7 @@ export default function AboutPage() {
                 </div>
               </div>
 
-              <div className="border-l-2 border-gold/40 pl-8 py-2">
+              <div className="border-l-2 border-gold/40 pl-10 py-4">
                 <p className="font-heading text-2xl italic text-navy/70 leading-relaxed">
                   "I am a pattern recognizer. A structure builder. Not a coach
                   in the conventional sense. Something more precise."
@@ -95,12 +95,12 @@ export default function AboutPage() {
 
               <div>
                 <span className="section-label">My Approach</span>
-                <h2 className="section-heading text-3xl sm:text-4xl text-navy mb-8">
+                <h2 className="section-heading text-3xl sm:text-4xl text-navy mb-10">
                   This is not therapy.
                   <br />
                   It is not coaching.
                 </h2>
-                <div className="h-px w-14 bg-gold/40 mb-8" />
+                <div className="h-px w-14 bg-gold/40 mb-10" />
                 <div className="space-y-5 font-body text-base text-navy/60 leading-relaxed">
                   <p>
                     My work is rooted in structure and precision. I work with
@@ -124,10 +124,10 @@ export default function AboutPage() {
       </section>
 
       {/* FOUNDING STATEMENT */}
-      <section className="py-28 bg-navy">
+      <section className="py-36 bg-navy">
         <div className="max-w-7xl mx-auto px-6 lg:px-10">
           <div className="max-w-3xl mx-auto">
-            <div className="flex items-center gap-4 mb-12">
+            <div className="flex items-center gap-4 mb-14">
               <span className="text-gold/50 text-xs">✦</span>
               <span className="h-px w-10 bg-gold/30" />
               <span className="font-body text-[0.65rem] uppercase tracking-[0.3em] text-gold/40">
@@ -164,7 +164,7 @@ export default function AboutPage() {
               </p>
             </div>
 
-            <div className="mt-12 pt-12 border-t border-ivory/10">
+            <div className="mt-16 pt-14 border-t border-ivory/10">
               <p className="font-heading text-2xl italic text-ivory/50">
                 Marija Djurović
               </p>
@@ -177,13 +177,13 @@ export default function AboutPage() {
       </section>
 
       {/* CTA */}
-      <section className="py-28 bg-ivory">
+      <section className="py-36 bg-ivory">
         <div className="max-w-7xl mx-auto px-6 lg:px-10 text-center">
           <span className="section-label">Next Step</span>
-          <h2 className="section-heading text-4xl sm:text-5xl text-navy mb-8 max-w-xl mx-auto">
+          <h2 className="section-heading text-4xl sm:text-5xl text-navy mb-10 max-w-xl mx-auto">
             Ready to find out where you stand?
           </h2>
-          <div className="h-px w-14 bg-gold/40 mx-auto mb-12" />
+          <div className="h-px w-14 bg-gold/40 mx-auto mb-14" />
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/assessment" className="btn-primary">
               Take the Free Assessment

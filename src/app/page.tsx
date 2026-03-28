@@ -67,18 +67,18 @@ export default function HomePage() {
       </section>
 
       {/* RECOGNITION BLOCK */}
-      <section className="py-24 bg-ivory border-b border-navy/8">
+      <section className="py-32 bg-ivory border-b border-navy/8">
         <div className="max-w-7xl mx-auto px-6 lg:px-10">
           <div className="max-w-2xl">
             <span className="section-label">Recognition</span>
-            <h2 className="section-heading text-3xl sm:text-4xl text-navy mb-10">
+            <h2 className="section-heading text-3xl sm:text-4xl text-navy mb-12">
               You might recognize yourself here if
             </h2>
             <div className="space-y-0">
               {recognitionPoints.map((point, i) => (
                 <div
                   key={i}
-                  className={`flex items-start gap-6 py-5 ${
+                  className={`flex items-start gap-6 py-6 ${
                     i < recognitionPoints.length - 1
                       ? "border-b border-navy/8"
                       : ""
@@ -93,7 +93,7 @@ export default function HomePage() {
                 </div>
               ))}
             </div>
-            <div className="mt-10">
+            <div className="mt-12">
               <p className="font-heading text-lg italic text-rosewood/70">
                 Pressure is not ambition.
               </p>
@@ -103,21 +103,21 @@ export default function HomePage() {
       </section>
 
       {/* WHAT IS SOFT POWER */}
-      <section className="py-28 bg-ivory">
+      <section className="py-36 bg-ivory">
         <div className="max-w-7xl mx-auto px-6 lg:px-10">
-          <div className="max-w-2xl mx-auto text-center">
+          <div className="max-w-xl mx-auto text-center">
             <span className="section-label">The Method</span>
-            <h2 className="section-heading text-4xl sm:text-5xl text-navy mb-8">
+            <h2 className="section-heading text-4xl sm:text-5xl text-navy mb-10">
               This is not about becoming more.
             </h2>
-            <div className="h-px w-14 bg-gold/40 mx-auto mb-10" />
-            <p className="font-body text-base text-navy/55 leading-relaxed mb-8">
+            <div className="h-px w-14 bg-gold/40 mx-auto mb-12" />
+            <p className="font-body text-base text-navy/55 mb-10">
               Most leadership approaches ask women to add. More strategy, more
               confidence, more performance. The Soft Power Method works at the
               level of identity and structure. It removes the accumulated
               performance and returns you to a foundation that holds.
             </p>
-            <p className="font-heading text-xl italic text-navy/70 leading-relaxed mb-4">
+            <p className="font-heading text-xl italic text-navy/70 mb-6">
               Not softer. Not harder. More precisely yourself.
             </p>
             <p className="font-body text-sm text-rosewood/70 uppercase tracking-[0.15em]">
@@ -128,9 +128,9 @@ export default function HomePage() {
       </section>
 
       {/* THREE PRINCIPLES */}
-      <section className="py-28 bg-navy/[0.03] border-y border-navy/8">
+      <section className="py-36 bg-[#111825]">
         <div className="max-w-7xl mx-auto px-6 lg:px-10">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-14 md:gap-10">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-16 md:gap-12">
             {[
               {
                 roman: "I",
@@ -149,13 +149,13 @@ export default function HomePage() {
               },
             ].map((item) => (
               <div key={item.roman} className="text-center md:text-left">
-                <span className="font-heading text-4xl text-gold/20 block mb-6 font-light">
+                <span className="font-heading text-4xl text-gold/35 block mb-8 font-light">
                   {item.roman}
                 </span>
-                <h3 className="font-heading text-2xl text-navy leading-snug mb-5 font-medium whitespace-pre-line">
+                <h3 className="font-heading text-2xl text-ivory leading-snug mb-6 font-medium whitespace-pre-line">
                   {item.heading}
                 </h3>
-                <p className="font-body text-sm text-navy/50 leading-relaxed">
+                <p className="font-body text-sm text-ivory/45">
                   {item.body}
                 </p>
               </div>
@@ -165,7 +165,7 @@ export default function HomePage() {
       </section>
 
       {/* FOUNDING STATEMENT QUOTE */}
-      <section className="py-32 bg-navy relative">
+      <section className="py-40 bg-navy relative">
         <div
           className="absolute inset-0 pointer-events-none"
           style={{
@@ -174,8 +174,8 @@ export default function HomePage() {
           }}
         />
         <div className="max-w-4xl mx-auto px-6 lg:px-10 text-center relative">
-          <span className="text-gold/25 text-xl block mb-10">✦</span>
-          <blockquote className="space-y-2 mb-10">
+          <span className="text-gold/25 text-xl block mb-12">✦</span>
+          <blockquote className="space-y-2 mb-14">
             <p className="font-heading text-2xl sm:text-3xl lg:text-4xl text-ivory/70 font-light italic leading-relaxed">
               "Soft Power does not harden women
               <br className="hidden sm:block" /> to make them powerful.
@@ -184,8 +184,8 @@ export default function HomePage() {
               It refines them."
             </p>
           </blockquote>
-          <div className="h-px w-12 bg-gold/30 mx-auto mb-8" />
-          <p className="font-heading text-lg italic text-ivory/30 mb-3">
+          <div className="h-px w-12 bg-gold/30 mx-auto mb-10" />
+          <p className="font-heading text-lg italic text-ivory/30 mb-4">
             Real power should feel clean.
           </p>
           <cite className="font-body text-[0.65rem] uppercase tracking-[0.25em] text-ivory/20 not-italic">
@@ -195,15 +195,15 @@ export default function HomePage() {
       </section>
 
       {/* ASSESSMENT CTA */}
-      <section className="py-28 bg-ivory">
+      <section className="py-36 bg-ivory">
         <div className="max-w-7xl mx-auto px-6 lg:px-10">
-          <div className="max-w-2xl mx-auto text-center">
+          <div className="max-w-xl mx-auto text-center">
             <span className="section-label">The Assessment</span>
-            <h2 className="section-heading text-4xl sm:text-5xl text-navy mb-8">
+            <h2 className="section-heading text-4xl sm:text-5xl text-navy mb-10">
               Where do you actually stand?
             </h2>
-            <div className="h-px w-14 bg-gold/40 mx-auto mb-10" />
-            <p className="font-body text-base text-navy/55 leading-relaxed mb-12">
+            <div className="h-px w-14 bg-gold/40 mx-auto mb-12" />
+            <p className="font-body text-base text-navy/55 mb-14">
               The Soft Power Assessment is a diagnostic instrument, not a quiz.
               It shows your current position in leadership development, clearly
               and without flattery. The result places you in one of four
@@ -217,22 +217,22 @@ export default function HomePage() {
       </section>
 
       {/* ABOUT MARIJA TEASER */}
-      <section className="py-28 bg-navy/[0.03] border-t border-navy/8">
+      <section className="py-36 bg-navy/[0.03] border-t border-navy/8">
         <div className="max-w-7xl mx-auto px-6 lg:px-10">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-20 items-center">
             <div className="order-2 md:order-1">
               <span className="section-label">The Founder</span>
-              <h2 className="section-heading text-4xl sm:text-5xl text-navy mb-8">
+              <h2 className="section-heading text-4xl sm:text-5xl text-navy mb-10">
                 I built this because I kept seeing the same pattern.
               </h2>
-              <div className="h-px w-14 bg-gold/40 mb-10" />
-              <p className="font-body text-base text-navy/55 leading-relaxed mb-6">
+              <div className="h-px w-14 bg-gold/40 mb-12" />
+              <p className="font-body text-base text-navy/55 mb-6">
                 I am Marija Djurović. I am not a motivational speaker. I am not
                 here to help you believe in yourself more or push harder. I am a
                 pattern recognizer. What I build with the women I work with is
                 permanent.
               </p>
-              <p className="font-body text-base text-navy/55 leading-relaxed mb-12">
+              <p className="font-body text-base text-navy/55 mb-14">
                 Not temporary inspiration. Structural recalibration.
               </p>
               <Link href="/about" className="btn-text">
@@ -254,9 +254,9 @@ export default function HomePage() {
       </section>
 
       {/* WORK WITH ME TEASER */}
-      <section className="py-28 bg-ivory border-t border-navy/8">
+      <section className="py-36 bg-ivory border-t border-navy/8">
         <div className="max-w-7xl mx-auto px-6 lg:px-10">
-          <div className="text-center mb-18">
+          <div className="text-center mb-20">
             <span className="section-label">Work With Me</span>
             <h2 className="section-heading text-4xl sm:text-5xl text-navy">
               Two ways to work together.
@@ -264,7 +264,7 @@ export default function HomePage() {
               Both are structured.
             </h2>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto mt-16">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto mt-20">
             {[
               {
                 title: "Clarity Session",
@@ -282,14 +282,14 @@ export default function HomePage() {
               },
             ].map((service) => (
               <div key={service.title} className="card-bordered">
-                <h3 className="font-heading text-2xl text-navy font-medium mb-2">
+                <h3 className="font-heading text-2xl text-navy font-medium mb-3">
                   {service.title}
                 </h3>
-                <span className="font-body text-[0.65rem] uppercase tracking-[0.2em] text-navy/35 block mb-8">
+                <span className="font-body text-[0.65rem] uppercase tracking-[0.2em] text-navy/35 block mb-10">
                   {service.detail}
                 </span>
-                <div className="h-px bg-blush/25 mb-8" />
-                <p className="font-body text-sm text-navy/55 leading-relaxed mb-10">
+                <div className="h-px bg-blush/25 mb-10" />
+                <p className="font-body text-sm text-navy/55 mb-12">
                   {service.description}
                 </p>
                 <Link href="/work-with-me" className="btn-text">

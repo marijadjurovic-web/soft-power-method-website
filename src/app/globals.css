@@ -10,6 +10,7 @@
   body {
     background-color: #F4EFE8;
     color: #1B2230;
+    line-height: 1.75;
   }
 
   ::selection {
@@ -30,7 +31,7 @@
   }
 
   .section-label {
-    @apply font-body text-xs uppercase tracking-[0.3em] text-gold/70 block mb-6;
+    @apply font-body text-xs uppercase tracking-[0.3em] text-gold/70 block mb-8;
   }
 
   .section-heading {
@@ -58,7 +59,7 @@
   }
 
   .card-bordered {
-    @apply border border-navy/10 p-10 hover:border-blush/50 transition-colors duration-300;
+    @apply border border-navy/10 p-14 hover:border-blush/50 transition-colors duration-300;
   }
 
   .divider-blush {
@@ -70,6 +71,6 @@
   }
 
   .section-label-blush {
-    @apply font-body text-xs uppercase tracking-[0.3em] text-rosewood/70 block mb-6;
+    @apply font-body text-xs uppercase tracking-[0.3em] text-rosewood/70 block mb-8;
   }
 }

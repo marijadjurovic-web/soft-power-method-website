@@ -35,16 +35,16 @@ export default function ContactPage() {
       </section>
 
       {/* ── CONTACT FORM ───────────────────────────────────────── */}
-      <section className="py-28 bg-ivory">
+      <section className="py-36 bg-ivory">
         <div className="max-w-7xl mx-auto px-6 lg:px-10">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-20">
             {/* Info */}
             <div className="lg:col-span-4">
               <span className="section-label">Get In Touch</span>
-              <h2 className="section-heading text-3xl text-navy mb-8">
+              <h2 className="section-heading text-3xl text-navy mb-10">
                 For inquiries about working together.
               </h2>
-              <div className="h-px w-14 bg-blush/40 mb-10" />
+              <div className="h-px w-14 bg-blush/40 mb-12" />
               <div className="space-y-5 font-body text-sm text-navy/55 leading-relaxed">
                 <p>
                   Use the form for inquiries about the Clarity Session, Soft
