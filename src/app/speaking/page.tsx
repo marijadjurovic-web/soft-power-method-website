@@ -131,18 +131,15 @@ export default function SpeakingPage() {
               </div>
             </div>
             <div className="lg:pt-16">
-              <div className="aspect-[4/5] bg-navy/5 relative overflow-hidden">
-                <img
-                  src="/marija-speaking.JPG"
-                  alt="Marija Djurović speaking"
-                  className="w-full h-full object-cover object-top"
-                />
-                <div className="absolute inset-4 border border-gold/15 pointer-events-none" />
-              </div>
-              <div className="mt-6 pl-2">
-                <p className="font-heading text-lg italic text-navy/50 leading-relaxed">
+              <div className="border-l-2 border-blush/30 pl-8 py-4 space-y-4">
+                <p className="font-heading text-2xl italic text-navy/60 leading-relaxed">
                   "People do not leave my sessions with motivation.
+                </p>
+                <p className="font-heading text-2xl italic text-navy/70 leading-relaxed">
                   They leave with recognition."
+                </p>
+                <p className="font-body text-[0.65rem] uppercase tracking-[0.2em] text-rosewood/60 pt-2">
+                  Marija Djurovic
                 </p>
               </div>
             </div>

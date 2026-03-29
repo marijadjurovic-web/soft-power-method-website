@@ -41,28 +41,18 @@ export default function WorkWithMePage() {
       {/* ── INTRO ──────────────────────────────────────────────── */}
       <section className="py-32 bg-ivory border-b border-navy/8">
         <div className="max-w-7xl mx-auto px-6 lg:px-10">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-20 items-center">
-            <div>
-              <p className="font-body text-base text-navy/60 leading-relaxed mb-5">
-                There are two ways to work with me. Both are structured. Neither
-                is open-ended. I do not run ongoing, indefinite programs. I run
-                precise processes with a clear beginning, a clear objective, and a
-                clear end.
-              </p>
-              <p className="font-body text-base text-navy/60 leading-relaxed">
-                If you are unsure which is right for you, start with the Clarity
-                Session. It will show you exactly where you are. And what the
-                right next step is.
-              </p>
-            </div>
-            <div className="aspect-[4/5] bg-navy/5 relative overflow-hidden">
-              <img
-                src="/marija-work.JPG"
-                alt="Marija Djurović"
-                className="w-full h-full object-cover object-top"
-              />
-              <div className="absolute inset-4 border border-gold/15 pointer-events-none" />
-            </div>
+          <div className="max-w-2xl">
+            <p className="font-body text-base text-navy/60 leading-relaxed mb-5">
+              There are two ways to work with me. Both are structured. Neither
+              is open-ended. I do not run ongoing, indefinite programs. I run
+              precise processes with a clear beginning, a clear objective, and a
+              clear end.
+            </p>
+            <p className="font-body text-base text-navy/60 leading-relaxed">
+              If you are unsure which is right for you, start with the Clarity
+              Session. It will show you exactly where you are. And what the
+              right next step is.
+            </p>
           </div>
         </div>
       </section>
@@ -147,23 +137,105 @@ export default function WorkWithMePage() {
                 <p className="font-body text-[0.65rem] uppercase tracking-[0.2em] text-navy/40 mb-6">
                   This is for you if
                 </p>
-                <ul className="space-y-3">
-                  {[
-                    "You need clarity before committing to a longer process",
-                    "You want a precise outside perspective on a specific leadership challenge",
-                    "Something has shifted and you need to understand what",
-                    "You are at a decision point and need structural clarity, not encouragement",
-                  ].map((item) => (
-                    <li key={item} className="flex items-start gap-3">
-                      <span className="text-blush/60 mt-1 text-xs flex-shrink-0">
-                        ·
-                      </span>
-                      <span className="font-body text-sm text-navy/55 leading-relaxed">
-                        {item}
-                      </span>
-                    </li>
-                  ))}
-                </ul>
+                <div className="space-y-5 font-body text-sm text-navy/60">
+                  <p>
+                    You are done guessing what is wrong. You have done the work.
+                    You are not new. But something still does not hold — your
+                    decisions, your boundaries, your energy. You do not need more
+                    information. You need to see what is actually happening.
+                  </p>
+                  <p>
+                    You are ready to: look at yourself without softening it /
+                    understand your patterns without justifying them / take full
+                    responsibility for what you are building.
+                  </p>
+                  <p className="font-medium text-navy/80">
+                    You do not need support. You need clarity.
+                  </p>
+                </div>
+              </div>
+
+              <div>
+                <p className="font-body text-[0.65rem] uppercase tracking-[0.2em] text-navy/40 mb-6">
+                  This is not for you if
+                </p>
+                <div className="font-body text-sm text-navy/60">
+                  <p>
+                    You are looking for motivation. You want to feel better, not
+                    see clearer. You expect emotional holding, reassurance, or
+                    validation. You are not ready to hear where you are leaking
+                    — in your standards, your decisions, your structure. You want
+                    someone to guide you gently. This is not gentle. It is
+                    precise.
+                  </p>
+                </div>
+              </div>
+
+              <div>
+                <p className="font-body text-[0.65rem] uppercase tracking-[0.2em] text-navy/40 mb-6">
+                  What this session is
+                </p>
+                <div className="space-y-5 font-body text-sm text-navy/60">
+                  <p>
+                    A 60-minute diagnostic of how you currently lead yourself.
+                  </p>
+                  <div>
+                    <p className="mb-3">We identify:</p>
+                    <ul className="space-y-2 pl-4">
+                      {[
+                        "where your identity is unstable",
+                        "where your boundaries collapse",
+                        "where your structure is missing or inconsistent",
+                      ].map((item) => (
+                        <li key={item} className="flex items-start gap-3">
+                          <span className="text-blush/60 mt-1 text-xs flex-shrink-0">·</span>
+                          <span>{item}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                  <div>
+                    <p className="mb-3">You leave with:</p>
+                    <ul className="space-y-2 pl-4">
+                      {[
+                        "a full map of your current pattern",
+                        "exact points of leakage",
+                        "a clear direction for recalibration",
+                      ].map((item) => (
+                        <li key={item} className="flex items-start gap-3">
+                          <span className="text-blush/60 mt-1 text-xs flex-shrink-0">·</span>
+                          <span>{item}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                  <p className="font-medium text-navy/80">
+                    No theory. No fluff. No emotional processing. Just clarity.
+                  </p>
+                </div>
+              </div>
+
+              <div>
+                <p className="font-body text-[0.65rem] uppercase tracking-[0.2em] text-navy/40 mb-6">
+                  What this session is not
+                </p>
+                <div className="font-body text-sm text-navy/60">
+                  <p>
+                    This is not coaching. This is not therapy. This is not a
+                    safe space to stay the same. You will not be held. You will
+                    be seen — clearly.
+                  </p>
+                </div>
+              </div>
+
+              <div className="border-l-2 border-blush/30 pl-8 py-3">
+                <p className="font-body text-[0.65rem] uppercase tracking-[0.2em] text-navy/40 mb-4">
+                  How to know if you are ready
+                </p>
+                <p className="font-heading text-lg italic text-navy/70">
+                  If you feel slightly uncomfortable reading this — but also
+                  know you need it. That is your answer.
+                </p>
               </div>
 
               {/* Calendly embed */}

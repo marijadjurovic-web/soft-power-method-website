@@ -39,32 +39,7 @@ export default function AboutPage() {
       {/* INTRO STATEMENT */}
       <section className="py-36 bg-ivory">
         <div className="max-w-7xl mx-auto px-6 lg:px-10">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-20 items-start">
-            {/* Photo */}
-            <div className="md:sticky top-28 space-y-6">
-              <div className="aspect-[4/5] bg-navy/5 relative overflow-hidden">
-                <img
-                  src="/marija-about.JPG"
-                  alt="Marija Djurović"
-                  className="w-full h-full object-cover object-top"
-                />
-                <div className="absolute inset-4 border border-gold/15 pointer-events-none" />
-              </div>
-              <div className="aspect-[4/3] bg-navy/5 relative overflow-hidden">
-                <img
-                  src="/marija-about-2.JPG"
-                  alt="Marija Djurović"
-                  className="w-full h-full object-cover object-center"
-                />
-                <div className="absolute inset-4 border border-gold/15 pointer-events-none" />
-              </div>
-              <div className="pl-2">
-                <p className="font-heading text-lg italic text-navy/50 leading-relaxed">
-                  "I am not here to motivate you."
-                </p>
-              </div>
-            </div>
-
+          <div className="max-w-2xl">
             {/* Text */}
             <div className="space-y-14">
               <div>
@@ -143,31 +118,32 @@ export default function AboutPage() {
               </span>
             </div>
 
-            <div className="space-y-6 font-body text-base text-ivory/55 leading-relaxed">
+            <div className="space-y-8 font-body text-base text-ivory/55">
               <p className="font-heading text-2xl sm:text-3xl text-ivory/80 font-light leading-relaxed italic">
                 "Soft Power is a leadership method for women who are ready to
                 stand fully in who they are."
               </p>
-              <p>It stabilizes identity.</p>
-              <p>It strengthens integrity.</p>
-              <p>It expands influence.</p>
               <p>
-                Through structure, standards, and self-regulation, women return
-                to their center. They build companies, decisions, and impact
-                from that place.
+                The method builds on three interconnected areas: identity,
+                integrity, and the expansion of real influence. Through
+                structure, standards, and self-regulation, it returns women to
+                a stable internal center — from which they make decisions, build
+                companies, and lead without eroding themselves in the process.
               </p>
               <p className="font-heading text-xl italic text-gold">
                 Soft Power does not harden women to make them powerful. It
                 refines them.
               </p>
-              <p>Here, strength is calm.</p>
-              <p>Authority is internal.</p>
-              <p>Standards are self-defined.</p>
-              <p className="font-heading text-xl italic text-ivory/70">
-                This is where leadership becomes aligned, sustainable, and
-                deeply embodied.
+              <p>
+                The work is precise, not motivational. Strength here is
+                expressed through clarity rather than force. Authority is
+                internal, not performed. Standards are defined by the individual
+                rather than inherited from circumstance, industry, or fear. The
+                result is leadership that is aligned with who you actually are —
+                sustainable not because conditions are ideal, but because the
+                foundation is structurally sound.
               </p>
-              <p className="font-heading text-2xl italic text-gold mt-8">
+              <p className="font-heading text-2xl italic text-gold">
                 This is the Soft Power Standard.
               </p>
             </div>
