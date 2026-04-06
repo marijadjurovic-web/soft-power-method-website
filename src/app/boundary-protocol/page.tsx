@@ -78,7 +78,7 @@ const faqs = [
   },
 ];
 
-const PAYPAL_URL = "https://paypal.com/PLACEHOLDER";
+const PAYPAL_URL = "https://www.paypal.com/ncp/payment/KBFT2X7NMW9B6";
 
 export default function BoundaryProtocolPage() {
   return (
