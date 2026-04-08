@@ -5,6 +5,27 @@
 [build.environment]
   NODE_VERSION = "20"
 
+[functions]
+  directory = "netlify/functions"
+
+# ── Clean URLs for serverless functions ───────────────────────────────────────
+
+# PayPal IPN endpoint — configure this URL in your PayPal account
+[[redirects]]
+  from = "/api/paypal-webhook"
+  to = "/.netlify/functions/paypal-webhook"
+  status = 200
+  force = true
+
+# Download endpoint — linked from purchase confirmation email
+[[redirects]]
+  from = "/api/download"
+  to = "/.netlify/functions/download"
+  status = 200
+  force = true
+
+# ── External redirects ────────────────────────────────────────────────────────
+
 [[redirects]]
   from = "/assessment"
   to = "https://tally.so/r/ZjNr5z"
