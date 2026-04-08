@@ -32,9 +32,19 @@ async function redisSet(key, value) {
   if (!res.ok) throw new Error(`Redis SET failed: ${res.status}`);
 }
 
+const CORS_HEADERS = {
+  "Access-Control-Allow-Origin": "*",
+  "Access-Control-Allow-Headers": "Content-Type",
+  "Access-Control-Allow-Methods": "POST, OPTIONS",
+};
+
 export const handler = async (event) => {
+  if (event.httpMethod === "OPTIONS") {
+    return { statusCode: 204, headers: CORS_HEADERS, body: "" };
+  }
+
   if (event.httpMethod !== "POST") {
-    return { statusCode: 405, body: "Method Not Allowed" };
+    return { statusCode: 405, headers: CORS_HEADERS, body: "Method Not Allowed" };
   }
 
   let email;
@@ -46,7 +56,7 @@ export const handler = async (event) => {
   }
 
   if (!email) {
-    return { statusCode: 400, body: JSON.stringify({ error: "email is required" }) };
+    return { statusCode: 400, headers: CORS_HEADERS, body: JSON.stringify({ error: "email is required" }) };
   }
 
   // Generate unique token
@@ -60,7 +70,7 @@ export const handler = async (event) => {
     });
   } catch (err) {
     console.error("Redis error:", err);
-    return { statusCode: 500, body: JSON.stringify({ error: "Failed to store token" }) };
+    return { statusCode: 500, headers: CORS_HEADERS, body: JSON.stringify({ error: "Failed to store token" }) };
   }
 
   const siteUrl = process.env.URL || "https://thesoftpowermethod.com";
@@ -68,7 +78,7 @@ export const handler = async (event) => {
 
   return {
     statusCode: 200,
-    headers: { "Content-Type": "application/json" },
+    headers: { ...CORS_HEADERS, "Content-Type": "application/json" },
     body: JSON.stringify({ token, download_url: downloadUrl }),
   };
 };
