@@ -10,14 +10,14 @@
 
 # ── Clean URLs for serverless functions ───────────────────────────────────────
 
-# PayPal IPN endpoint — configure this URL in your PayPal account
+# Called by Make.com to generate a unique download token after PayPal payment
 [[redirects]]
-  from = "/api/paypal-webhook"
-  to = "/.netlify/functions/paypal-webhook"
+  from = "/api/generate-token"
+  to = "/.netlify/functions/generate-token"
   status = 200
   force = true
 
-# Download endpoint — linked from purchase confirmation email
+# Download endpoint — linked from MailerLite email
 [[redirects]]
   from = "/api/download"
   to = "/.netlify/functions/download"
