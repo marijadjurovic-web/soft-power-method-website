@@ -24,16 +24,3 @@
   status = 200
   force = true
 
-# ── External redirects ────────────────────────────────────────────────────────
-
-[[redirects]]
-  from = "/assessment"
-  to = "https://tally.so/r/ZjNr5z"
-  status = 302
-  force = true
-
-[[redirects]]
-  from = "/assessment/"
-  to = "https://tally.so/r/ZjNr5z"
-  status = 302
-  force = true
