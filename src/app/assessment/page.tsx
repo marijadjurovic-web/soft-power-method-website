@@ -38,12 +38,11 @@ export default function AssessmentPage() {
         <div className="max-w-3xl mx-auto text-center">
           <p className="section-label text-gold mb-8">Soft Power Assessment</p>
           <h1 className="font-heading text-5xl md:text-6xl text-ivory leading-tight mb-8">
-            Find the pattern currently shaping how you lead under pressure.
+            Your life is not what you envisioned. You already know why. You just
+            can't see it yet.
           </h1>
           <p className="text-ivory/70 text-lg md:text-xl leading-relaxed mb-12 max-w-2xl mx-auto">
-            In less than 10 minutes, the Soft Power Assessment will show you
-            where you are really leading from and what that pattern may be
-            costing you in your decisions, standards, energy, and relationships.
+            This test will show you exactly why.
           </p>
           <a
             href={TALLY_URL}
